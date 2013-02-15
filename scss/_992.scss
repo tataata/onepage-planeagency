@@ -105,6 +105,8 @@ address {
 
       li {
         display:inline-block;
+        *display: inline;
+        *zoom: 1;
         padding:0;
         height:  $nav-height;
         vertical-align: middle;
