@@ -7,3 +7,16 @@
 .section {
   width:40em;
 }
+
+// Typography
+.footer {
+  .nav {
+    li {
+      
+        @include font-size(10);
+    }
+  }
+  .copyright {
+		@include font-size(10);
+	}
+}

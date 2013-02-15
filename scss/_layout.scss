@@ -29,7 +29,7 @@
           content: "/";
           display: block;
           position: absolute;
-          height: 3em;
+          height:  $nav-height;
           width: 1em;
           top:0;
           right: -.5em;
@@ -43,6 +43,27 @@
           display:block;
           height: $nav-height;
           padding: 0 1em 0 0;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+
+  .nav {
+
+    ul {
+      margin-bottom: .75em;
+      li {
+        
+        &:after {
+
+          height:  $nav-height / 1.5;
+        }
+
+        a {
+          height:  $nav-height / 1.5;
         }
       }
     }
@@ -263,6 +284,28 @@
     }
 
   }
+
+  .footer {
+    margin: 7em auto 0;
+
+
+    .nav,
+    .copyright {
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+    } 
+
+    .nav {
+      ul {
+        li {
+          a {
+            padding: 0 .7em 0 .5em;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Footer 
@@ -291,6 +334,11 @@
         }
       }
     }
+  }
+  .copyright {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
   }
 }
 

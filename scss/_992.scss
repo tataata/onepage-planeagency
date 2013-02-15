@@ -51,6 +51,18 @@ address {
 		@include font-size(18);
 	}
 }
+.footer {
+  .nav {
+    li {
+      
+        @include font-size(11);
+    }
+  }
+  .copyright {
+    @include font-size(11);
+  }
+}
+
 
 // ELEMENTS / Forms 			==============================
 .enquery__form {

@@ -46,12 +46,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	@include font-size(22);
+	@include font-size(24);
 	line-height: 1;
 	margin-top: $base-line-height;
 	margin-bottom: $base-line-height;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 h2 {
@@ -97,6 +97,7 @@ address {
 	line-height: $base-line-height;
 	margin-bottom: $base-line-height;
 }
+
 
 .center {
 	text-align: center;
@@ -149,13 +150,13 @@ address {
 // Section specific / Footer	 		=============
 .footer {
 	// Footer 
-
   .nav {
-
-
     li {
       
         @include font-size(9);
     }
   }
+  .copyright {
+		@include font-size(9);
+	}
 }
