@@ -101,18 +101,17 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   /* Technique: http://css-tricks.com/perfect-full-page-background-image/ */
-  background: url(../i/bg.jpg) no-repeat center center fixed;
+  background: url(../i/bg.jpg) center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  -webkit-background-size: 1534px 1024px;
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
   font-size: 62.5%;
 }
 
-/* line 41, ../scss/_site.scss */
+/* line 44, ../scss/_site.scss */
 body {
   margin: 0;
   padding: 0;

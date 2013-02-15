@@ -27,16 +27,19 @@ html {
   -webkit-text-size-adjust : 100%;
   -ms-text-size-adjust : 100%;
   /* Technique: http://css-tricks.com/perfect-full-page-background-image/ */
-  background: url(../i/bg.jpg) no-repeat center center fixed; 
+  background: url(../i/bg.jpg)  center center no-repeat fixed; 
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  -webkit-background-size: 1534px 1024px; // fix not correct scaling in safari on ipad
   background-size: cover;
+ // -webkit-background-size: 1534px 1024px; // fix not correct scaling in safari on ipad
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
   font-size : 62.5%;
 }
+
+
 
 body {
   margin : 0;
