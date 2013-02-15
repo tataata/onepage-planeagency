@@ -31,6 +31,7 @@ html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  -webkit-background-size: 1534px 1024px; // fix not correct scaling in safari on ipad
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
