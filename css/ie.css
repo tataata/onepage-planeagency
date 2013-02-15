@@ -1296,277 +1296,275 @@ td {
   *zoom: 1;
 }
 
-@media only screen and (min-width: 992px) {
-  /* 992 =================================================== */
-  /* line 9, ../scss/_992.scss */
-  .nav,
-  .header,
-  .section {
-    width: 46em;
-  }
+/* 992 =================================================== */
+/* line 9, ../scss/_992.scss */
+.nav,
+.header,
+.section {
+  width: 46em;
+}
 
-  /* line 15, ../scss/_992.scss */
-  h1 {
-    font-size: 36px;
-    font-size: 3.6rem;
-  }
+/* line 15, ../scss/_992.scss */
+h1 {
+  font-size: 36px;
+  font-size: 3.6rem;
+}
 
-  /* line 18, ../scss/_992.scss */
-  h2 {
-    font-size: 24px;
-    font-size: 2.4rem;
-  }
+/* line 18, ../scss/_992.scss */
+h2 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
 
-  /* line 22, ../scss/_992.scss */
-  article h1 {
-    font-size: 22px;
-    font-size: 2.2rem;
-  }
+/* line 22, ../scss/_992.scss */
+article h1 {
+  font-size: 22px;
+  font-size: 2.2rem;
+}
 
-  /* line 30, ../scss/_992.scss */
-  p,
-  ol,
-  ul,
-  dl,
-  address {
-    font-size: 15px;
-    font-size: 1.5rem;
-  }
+/* line 30, ../scss/_992.scss */
+p,
+ol,
+ul,
+dl,
+address {
+  font-size: 15px;
+  font-size: 1.5rem;
+}
 
-  /* line 34, ../scss/_992.scss */
-  .principles {
-    font-size: 21px;
-    font-size: 2.1rem;
-  }
+/* line 34, ../scss/_992.scss */
+.principles {
+  font-size: 21px;
+  font-size: 2.1rem;
+}
 
-  /* line 39, ../scss/_992.scss */
-  .nav li {
-    font-size: 11px;
-    font-size: 1.1rem;
-  }
+/* line 39, ../scss/_992.scss */
+.nav li {
+  font-size: 11px;
+  font-size: 1.1rem;
+}
 
-  /* line 45, ../scss/_992.scss */
-  .contacts h1 {
-    margin-bottom: 2em;
-  }
+/* line 45, ../scss/_992.scss */
+.contacts h1 {
+  margin-bottom: 2em;
+}
 
-  /* line 50, ../scss/_992.scss */
-  .contacts-list .text {
-    font-size: 18px;
-    font-size: 1.8rem;
-  }
+/* line 50, ../scss/_992.scss */
+.contacts-list .text {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
 
-  /* line 56, ../scss/_992.scss */
-  .footer .nav li {
-    font-size: 11px;
-    font-size: 1.1rem;
-  }
-  /* line 61, ../scss/_992.scss */
-  .footer .copyright {
-    font-size: 11px;
-    font-size: 1.1rem;
-  }
+/* line 56, ../scss/_992.scss */
+.footer .nav li {
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+/* line 61, ../scss/_992.scss */
+.footer .copyright {
+  font-size: 11px;
+  font-size: 1.1rem;
+}
 
-  /* line 70, ../scss/_992.scss */
-  .enquery__form label {
-    position: absolute;
-  }
-  /* line 74, ../scss/_992.scss */
-  .enquery__form label:after {
-    left: -1.25em;
-  }
-  /* line 78, ../scss/_992.scss */
-  .enquery__form label.show {
-    display: block;
-  }
-  /* line 81, ../scss/_992.scss */
-  .enquery__form label.hide {
-    display: none;
-  }
+/* line 70, ../scss/_992.scss */
+.enquery__form label {
+  position: absolute;
+}
+/* line 74, ../scss/_992.scss */
+.enquery__form label:after {
+  left: -1.25em;
+}
+/* line 78, ../scss/_992.scss */
+.enquery__form label.show {
+  display: block;
+}
+/* line 81, ../scss/_992.scss */
+.enquery__form label.hide {
+  display: none;
+}
 
-  /* line 90, ../scss/_992.scss */
-  .nav__wrap {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3em;
-  }
-  /* line 98, ../scss/_992.scss */
-  .nav__wrap .nav {
-    margin: 0 auto;
-    line-height: 1;
-    text-align: center;
-  }
-  /* line 103, ../scss/_992.scss */
-  .nav__wrap .nav ul {
-    padding: 0;
-  }
-  /* line 106, ../scss/_992.scss */
-  .nav__wrap .nav ul li {
-    display: inline-block;
-    padding: 0;
-    height: 3em;
-    vertical-align: middle;
-    line-height: 3em;
-    margin: 0 1.5em;
-    position: relative;
-  }
-  /* line 115, ../scss/_992.scss */
-  .nav__wrap .nav ul li:after {
-    content: "•";
-    display: block;
-    position: absolute;
-    height: 3em;
-    width: 1em;
-    top: 0;
-    right: -2.25em;
-  }
-  /* line 125, ../scss/_992.scss */
-  .nav__wrap .nav ul li:last-child:after {
-    display: none;
-  }
-  /* line 129, ../scss/_992.scss */
-  .nav__wrap .nav ul li a {
-    display: block;
-    padding: 0;
-  }
+/* line 90, ../scss/_992.scss */
+.nav__wrap {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3em;
+}
+/* line 98, ../scss/_992.scss */
+.nav__wrap .nav {
+  margin: 0 auto;
+  line-height: 1;
+  text-align: center;
+}
+/* line 103, ../scss/_992.scss */
+.nav__wrap .nav ul {
+  padding: 0;
+}
+/* line 106, ../scss/_992.scss */
+.nav__wrap .nav ul li {
+  display: inline-block;
+  padding: 0;
+  height: 3em;
+  vertical-align: middle;
+  line-height: 3em;
+  margin: 0 1.5em;
+  position: relative;
+}
+/* line 115, ../scss/_992.scss */
+.nav__wrap .nav ul li:after {
+  content: "•";
+  display: block;
+  position: absolute;
+  height: 3em;
+  width: 1em;
+  top: 0;
+  right: -2.25em;
+}
+/* line 125, ../scss/_992.scss */
+.nav__wrap .nav ul li:last-child:after {
+  display: none;
+}
+/* line 129, ../scss/_992.scss */
+.nav__wrap .nav ul li a {
+  display: block;
+  padding: 0;
+}
 
-  /* line 139, ../scss/_992.scss */
-  .wrap {
-    background: transparent;
-    width: 100%;
-  }
-  /* line 143, ../scss/_992.scss */
-  .wrap .section__wrap {
-    width: 100%;
-  }
-  /* line 146, ../scss/_992.scss */
-  .wrap .section__wrap .section {
-    margin: 0 auto;
-  }
+/* line 139, ../scss/_992.scss */
+.wrap {
+  background: transparent;
+  width: 100%;
+}
+/* line 143, ../scss/_992.scss */
+.wrap .section__wrap {
+  width: 100%;
+}
+/* line 146, ../scss/_992.scss */
+.wrap .section__wrap .section {
+  margin: 0 auto;
+}
 
-  /* line 160, ../scss/_992.scss */
-  html,
-  body,
-  .wrap {
-    height: 100%;
-  }
+/* line 160, ../scss/_992.scss */
+html,
+body,
+.wrap {
+  height: 100%;
+}
 
-  /* line 164, ../scss/_992.scss */
-  .wrap .section__wrap {
-    min-height: 100%;
-    padding: 0;
-  }
-  /* line 168, ../scss/_992.scss */
-  .wrap .section__wrap .section {
-    padding: 0 0 4em;
-  }
-  /* line 171, ../scss/_992.scss */
-  .wrap .section__wrap .section h1 {
-    padding-top: 0;
-  }
-  /* line 173, ../scss/_992.scss */
-  .wrap .section__wrap .section h1 a {
-    padding-top: 1.5em;
-    display: block;
-  }
+/* line 164, ../scss/_992.scss */
+.wrap .section__wrap {
+  min-height: 100%;
+  padding: 0;
+}
+/* line 168, ../scss/_992.scss */
+.wrap .section__wrap .section {
+  padding: 0 0 4em;
+}
+/* line 171, ../scss/_992.scss */
+.wrap .section__wrap .section h1 {
+  padding-top: 0;
+}
+/* line 173, ../scss/_992.scss */
+.wrap .section__wrap .section h1 a {
+  padding-top: 1.5em;
+  display: block;
+}
 
-  /* line 187, ../scss/_992.scss */
-  .header__wrap .section {
-    padding: 0;
-  }
-  /* line 190, ../scss/_992.scss */
-  .header__wrap .section h1 {
-    margin: 0;
-  }
-  /* line 196, ../scss/_992.scss */
-  .header__wrap .header .logo {
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -290px;
-    margin-top: -48.5px;
-  }
-  /* line 204, ../scss/_992.scss */
-  .header__wrap .header h1.logo {
-    margin-top: -48.5px;
-  }
-  /* line 208, ../scss/_992.scss */
-  .header__wrap .header .tagline {
-    text-indent: -9878px;
-    display: none;
-  }
+/* line 187, ../scss/_992.scss */
+.header__wrap .section {
+  padding: 0;
+}
+/* line 190, ../scss/_992.scss */
+.header__wrap .section h1 {
+  margin: 0;
+}
+/* line 196, ../scss/_992.scss */
+.header__wrap .header .logo {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -290px;
+  margin-top: -48.5px;
+}
+/* line 204, ../scss/_992.scss */
+.header__wrap .header h1.logo {
+  margin-top: -48.5px;
+}
+/* line 208, ../scss/_992.scss */
+.header__wrap .header .tagline {
+  text-indent: -9878px;
+  display: none;
+}
 
-  /* line 214, ../scss/_992.scss */
-  .nav__wrap {
-    background: url("../i/dot-orange.png"), url(../i/bg.jpg);
-    background-repeat: repeat, no-repeat;
-    background-position: top left, center center;
-    background-attachment: scroll, fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-  }
+/* line 214, ../scss/_992.scss */
+.nav__wrap {
+  background: url("../i/dot-orange.png"), url(../i/bg.jpg);
+  background-repeat: repeat, no-repeat;
+  background-position: top left, center center;
+  background-attachment: scroll, fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
 
-  /* line 218, ../scss/_992.scss */
-  .about__wrap {
-    background: url("../i/dot-yellow.png"), url(../i/bg.jpg);
-    background-repeat: repeat, no-repeat;
-    background-position: top left, center center;
-    background-attachment: scroll, fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-  }
+/* line 218, ../scss/_992.scss */
+.about__wrap {
+  background: url("../i/dot-yellow.png"), url(../i/bg.jpg);
+  background-repeat: repeat, no-repeat;
+  background-position: top left, center center;
+  background-attachment: scroll, fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
 
-  /* line 222, ../scss/_992.scss */
-  .services__wrap {
-    background: url("../i/dot-blue.png"), url(../i/bg.jpg);
-    background-repeat: repeat, no-repeat;
-    background-position: top left, center center;
-    background-attachment: scroll, fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-  }
+/* line 222, ../scss/_992.scss */
+.services__wrap {
+  background: url("../i/dot-blue.png"), url(../i/bg.jpg);
+  background-repeat: repeat, no-repeat;
+  background-position: top left, center center;
+  background-attachment: scroll, fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
 
-  /* line 226, ../scss/_992.scss */
-  .enqueries__wrap {
-    background: url("../i/dot-dark-blue.png"), url(../i/bg.jpg);
-    background-repeat: repeat, no-repeat;
-    background-position: top left, center center;
-    background-attachment: scroll, fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-  }
+/* line 226, ../scss/_992.scss */
+.enqueries__wrap {
+  background: url("../i/dot-dark-blue.png"), url(../i/bg.jpg);
+  background-repeat: repeat, no-repeat;
+  background-position: top left, center center;
+  background-attachment: scroll, fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
 
-  /* line 229, ../scss/_992.scss */
-  .contacts__wrap {
-    background: url("../i/dot-see-green.png"), url(../i/bg.jpg);
-    background-repeat: repeat, no-repeat;
-    background-position: top left, center center;
-    background-attachment: scroll, fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-  }
+/* line 229, ../scss/_992.scss */
+.contacts__wrap {
+  background: url("../i/dot-see-green.png"), url(../i/bg.jpg);
+  background-repeat: repeat, no-repeat;
+  background-position: top left, center center;
+  background-attachment: scroll, fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
