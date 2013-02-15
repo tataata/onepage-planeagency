@@ -1,0 +1,104 @@
+
+/* 600 =================================================== */
+
+// Main width values
+.nav,
+.header,
+.section {
+  width:32em;
+}
+
+
+// Typography ====================================
+
+p,
+ol,
+ul,
+dl,
+address {
+	@include font-size(13);
+}
+// Typography / ===================================
+.principles {
+	@include font-size(15);
+}
+
+// Typography / Contacts	 		=====================
+.contacts-list {
+	.text {	
+		@include font-size(16);
+	}
+}
+
+// Layout / Nav
+.nav__wrap {
+
+  .nav {
+
+
+    ul {
+
+
+      li {
+        height: $nav-height;
+        line-height: $nav-height;
+      }
+
+    }
+  }
+}
+// Layout / About        =========================
+
+.principles {
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin:0 $base-line-height / 2;
+    position: relative;
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: "•";
+      position: absolute;
+      top: 0;
+      right: -$base-line-height / 2 - .4em;
+      display: block;
+
+      
+    }
+  }
+}
+
+// Layout / Enquiries ====================================
+.enqueries {
+
+  .enquery__form {
+    float: left;
+
+
+
+    .personal-info {
+      float: left;
+      width: 44%;
+    }
+    .company-info {
+      float: right;
+      width: 44%;
+    }
+    button {
+      float: right;
+      width: 44%;
+    }
+  }
+}
+
+// Layout / Footer  ====================================
+.footer__wrap {
+	display: none;
+}

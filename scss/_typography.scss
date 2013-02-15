@@ -1,0 +1,161 @@
+/*::-moz-selection { background: #212f3d; color: #fff; text-shadow: none; }
+::selection { background:#212f3d; color: #fff; text-shadow: none; }*/
+
+@font-face {
+  font-family: 'museo_sans_cyrl_500regular';
+  src: url('../fonts/museosanscyrl_500-webfont.eot');
+  src: url('../fonts/museosanscyrl_500-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/museosanscyrl_500-webfont.woff') format('woff'),
+       url('../fonts/museosanscyrl_500-webfont.ttf') format('truetype'),
+       url('../fonts/museosanscyrl_500-webfont.svg#museo_sans_cyrl_500regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pluto-sans-cond-light';
+  src: url('../fonts/pluto-sans-cond-light.eot');
+  src: url('../fonts/pluto-sans-cond-light.eot') format('embedded-opentype'),
+       url('../fonts/pluto-sans-cond-light.woff') format('woff'),
+       url('../fonts/pluto-sans-cond-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: $base-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: left;
+	font-family: $headings;
+}
+
+.enquery__form {
+	button {
+		font-family: $headings;
+	}
+}
+
+.header,
+.contacts {
+	h1,
+	h2 {
+		text-align: center;
+	}
+}
+
+h1 {
+	@include font-size(22);
+	line-height: 1;
+	margin-top: $base-line-height;
+	margin-bottom: $base-line-height;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h2 {
+	@include font-size(18);
+	line-height: 1;
+	margin-top: $base-line-height;
+	margin-bottom: $base-line-height;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.section {
+	h1 {
+		margin-bottom: $base-line-height;
+	}
+}
+
+article {
+	h1 {
+		@include font-size(16);
+		line-height: 1;
+		margin-top: $base-line-height * 1.5;
+		margin-bottom: $base-line-height / 1;
+	}
+	h2 {
+		margin-bottom: $base-line-height / 2;
+	}
+	li,
+	dt,
+	dd {
+		margin-bottom: $base-line-height / 1.5;
+	}
+}
+
+p,
+ol,
+ul,
+dl,
+address {
+	@include font-size(12);
+	line-height: $base-line-height;
+	margin-bottom: $base-line-height;
+}
+
+.center {
+	text-align: center;
+}
+
+// Section specific 		=========================
+// Section specific / Navigation 		=============
+.nav {
+	li {
+		@include font-size(12);
+		font-family: $headings;
+		text-transform: uppercase;
+	}
+}
+// Section specific / Header				=============
+// Section specific / Who we are 		=============
+
+.principles {
+	@include font-size(16);
+	font-family: $headings;
+}
+
+// Section specific / Services 			=============
+
+// Section specific / Enqueries 		=============
+.enquery__form {
+	input,
+	textarea {
+		font-family: $base-font;
+	}
+}
+.optional {
+	span {
+		font-style: italic;
+	}
+}
+
+// Section specific / Contacts	 		=============
+.contacts {
+	h1 {
+		margin-bottom: 2em;
+	}
+}
+.contacts-list {
+	.text {	
+		@include font-size(13);
+	}
+}
+
+// Section specific / Footer	 		=============
+.footer {
+	// Footer 
+
+  .nav {
+
+
+    li {
+      
+        @include font-size(9);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+
+/* 320 =================================================== */
+
+
+// 320 / Layout / Logo      ============================
+.header__wrap {
+  .header {
+
+    .logo {
+      margin: 3em 0 3em;
+      width: 100%;
+    }
+  }
+}
+
+.nav__wrap {
+  .nav {
+    ul {
+      li {
+        height: $nav-height / 1.4;
+        line-height: $nav-height / 1.4;
+      }
+    }
+  }
+}

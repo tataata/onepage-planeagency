@@ -1,0 +1,16 @@
+# Can ignore specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Use wildcards as well
+*~
+*.swp
+
+# Can also ignore all directories and files in a directory.
+.sass-cashe/

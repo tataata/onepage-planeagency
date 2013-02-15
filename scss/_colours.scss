@@ -1,0 +1,104 @@
+// 
+@import "compass/utilities/links/link-colors";
+
+// Background of sections =======================
+.header__wrap {
+  background: transparent;
+}
+.nav__wrap {
+  //@include bg-rgba($orange, .85);
+  background: 0 0 url($orange-dot-path) repeat;
+}
+.about__wrap {
+  //@include bg-rgba($yellow, $yellow-alpha);
+  background: 0 0 url($yellow-dot-path) repeat;
+  @include text-shadow(darken($yellow, 20%) 1px 1px);
+  h1 {
+  	@include text-shadow(darken($yellow, 20%) 2px 2px);
+  }
+  
+}
+.services__wrap {
+  //@include bg-rgba($blue);
+  background: 0 0 url($blue-dot-path) repeat;
+  @include text-shadow(darken($blue, 20%) 1px 1px);
+  h1 {
+  	@include text-shadow(darken($blue, 20%) 2px 2px);
+  }
+  
+}
+.enqueries__wrap {
+ // @include bg-rgba($dark-blue, $dark-blue-alpha);
+  background: 0 0 url($dark-blue-dot-path) repeat;
+  @include text-shadow(darken($dark-blue, 10%) 1px 1px);
+  h1 {
+  	@include text-shadow(darken($dark-blue, 20%) 2px 2px);
+  }
+  
+}
+.contacts__wrap {
+  //@include bg-rgba($see-green, $see-green-alpha);
+  background: 0 0 url($see-green-dot-path) repeat;
+  @include text-shadow(darken($see-green, 10%) 1px 1px);
+  h1 {
+  	@include text-shadow(darken($see-green, 10%) 2px 2px);
+  }
+}
+
+.footer__wrap {
+  background: 0 0 url($black-dot-path) repeat;
+  //@include bg-rgba($black, .3);
+}
+
+
+
+// Text highlighting
+::-moz-selection { background: #1b3f50; color: #fff; text-shadow: none; }
+::selection { background: #1b3f50; color: #fff; text-shadow: none; }
+
+
+// LINKS						=============================
+.nav,
+.contacts {
+	a {
+    //link-colors($normal, $hover, $active, $visited, $focus)
+		@include link-colors($text-color,$text-color,$text-color,$text-color,$text-color);
+    text-decoration: none;
+	}
+}
+.nav {
+  a:active,
+  a.current {
+
+      span{
+        border-bottom: 2px solid $white;
+      }
+      
+    
+  }
+  #about:target {
+        border-bottom: 2px solid $white;
+
+  }
+
+
+}
+
+
+.contacts {
+	.text {
+    a {
+		text-decoration: none;
+
+  		&:hover {
+  			border-bottom: 2px solid $white;
+  		}
+    }
+	}
+}
+h1 {
+  a {
+    @include link-colors($text-color,$text-color,$text-color,$text-color,$text-color);
+    text-decoration: none;
+  }
+}

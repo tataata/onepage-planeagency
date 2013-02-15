@@ -1,0 +1,314 @@
+// LAYOUT     ===================================
+@import "compass/utilities/general/clearfix";
+
+// Main width values
+.nav,
+.header,
+.section {
+  width:18.5em;
+}
+
+
+// Navigation
+.footer,
+.nav__wrap {
+
+  .nav {
+    line-height: 1;
+    text-align: left;
+    margin: 0 auto;
+
+    ul {
+      padding:0;
+
+      li {
+        display: inline-block;
+        position: relative;
+
+        &:after {
+          content: "/";
+          display: block;
+          position: absolute;
+          height: 3em;
+          width: 1em;
+          top:0;
+          right: -.5em;
+        }
+
+        &:last-child:after {
+          display:none;
+        }
+
+        a {
+          display:block;
+          height: $nav-height;
+          padding: 0 1em 0 0;
+        }
+      }
+    }
+  }
+}
+
+.wrap {
+  background: transparent;
+  width: 100%;
+
+	.section__wrap {
+		padding:0 0 3em;
+    width: 100%;
+
+    .section {
+      margin:0 auto;
+      //padding: 3em 0;
+
+      h1 {
+        padding-top: $base-line-height / 1.5;
+        margin-top: 0;
+      }
+    }
+	}
+}
+
+.header__wrap {
+  padding: 0 !important;
+
+  .header {
+    text-align: center;
+    margin: 0 auto;
+
+    h1,
+    h2 {
+      text-align: left;
+      text-indent: -9878px;
+    }
+    .tagline {
+      display:none;
+    }
+    .logo {
+      width: 85%;
+      max-width: $logo-width;
+
+      img {
+        width: 100%;
+        max-width: $logo-width;
+        display: block;
+      }
+    }
+  }
+}
+
+// About        =================================
+.principles {
+  text-align: left;
+  padding: 0;
+
+  li {
+    margin:0 $base-line-height / 1.5;
+    position: relative;
+    list-style: disc;
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      display: none;
+    }
+
+  }
+
+}
+
+// Services   ===================================
+.services__list {
+  margin: 0 auto;
+  width: 80%;
+
+  li {
+    margin-bottom: 1.5em;
+    list-style: none;
+    position: relative;
+
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      background: 0 0 url(../i/marker.gif) no-repeat;
+      width: 11px;
+      height: 3px;
+      top: .65em;
+      //margin-top: -2px;
+      left: -1em;
+    }
+
+    &:after {
+      content: ";";
+    }
+    &:last-child {
+      &:after {
+        content: ".";
+      }
+    }
+  }
+}
+.services {
+  .business-services,
+  .airport {
+    .title {
+      margin-left: 60px;
+      position: relative;
+
+      .icon {
+        position: absolute;
+        width: 46px;
+        height: 48px;
+        background: 0 0 url("../i/icon-airports.png") no-repeat;
+        /*border: 1px solid red;*/
+        bottom: 4px;
+        left: -56px;
+      }
+    }
+  }
+  .business-services {
+    .title {
+      margin-left: 60px;
+
+      .icon {
+        position: absolute;
+        width: 45px;
+        height: 61px;
+        background: 0 0 url("../i/icon-services.png") no-repeat;
+        /*border: 1px solid red;*/
+        bottom: -8px;
+        left: -56px;
+      }
+    }
+  }
+}
+// Enquiries ====================================
+.enqueries {
+  overflow: visible;
+
+  .enquery__form {
+    width: 100%;
+
+
+    .field {
+      margin:0 0 $base-line-height / 1.5;
+
+    }
+  }
+}
+// Contacts     =================================
+.contacts {
+
+  .contacts-list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+
+    .contacts-list__item {
+      padding: 0;
+      margin: 0 auto 1em;
+      //display: inline-block;
+      text-align: center;
+      clear: both;
+      white-space: nowrap;
+
+      .text {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: 50px; // = width of icon for proper text aligment
+      }
+    }
+
+    .email {
+      position: relative;
+
+      .text {
+        position: relative;
+
+        &:before {
+          position: absolute;
+          content: "";
+          width: 36px;
+          height: 24px;
+          top: 6px;
+          left: -50px;
+          //border: 1px solid red;
+          background: 0 0 url(../i/icons.png) no-repeat;
+        }
+      }
+    }
+
+    .phone {
+      position: relative;
+
+      .text {
+        position: relative;
+
+        &:before {
+          position: absolute;
+          content: "";
+          width: 30px;
+          height: 30px;
+          top: 6px;
+          left: -45px;
+          //border: 1px solid red;
+          background: -40px 0 url(../i/icons.png) no-repeat;
+        }
+      }
+    }
+
+  }
+}
+
+// Footer 
+.footer__wrap {
+  text-align: center;
+  padding: 2em 0 !important;
+
+  .nav {
+    line-height: 1;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 1em;
+  }
+  .nav {
+    width: 100%;
+    height: auto;
+
+    ul {
+      li {
+        display: inline-block;
+        a {
+          height: $nav-height / 3;
+          padding: 0 .8em 0 .6em;
+        }
+      }
+    }
+  }
+}
+
+// Feedback for sending message
+.message-feedback {
+  position: fixed;
+  z-index: 4;
+  top: $nav-height;
+  text-align: center;
+  left: 0;
+  right: 0;
+
+  p {
+    display: block;
+    padding: 1.5em 0;
+    text-align: center;
+    line-height: $nav-height;
+    margin: 0;
+    background: 0 0 url($black-dot-path) repeat;
+  }
+}

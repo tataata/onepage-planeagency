@@ -1,0 +1,219 @@
+
+/* 992 =================================================== */
+
+// ROOT
+
+// Main width values
+.nav,
+.header,
+.section {
+  width:46em;
+}
+
+
+// Typography ====================================
+h1 {
+	@include font-size(36);
+}
+h2 {
+	@include font-size(24);
+}
+article {
+	h1 {
+		@include font-size(22);
+	}
+}
+p,
+ol,
+ul,
+dl,
+address {
+	@include font-size(15);
+}
+// Typography / ===================================
+.principles {
+	@include font-size(21);
+}
+// Typography / Nav ===============================
+.nav {
+	li {
+		@include font-size(11);
+	}
+}
+// Typography / Contacts	 		=====================
+.contacts {
+	h1 {
+		margin-bottom: 2em;
+	}
+}
+.contacts-list {
+	.text {	
+		@include font-size(18);
+	}
+}
+
+// ELEMENTS / Forms 			==============================
+.enquery__form {
+
+	label {
+		position: absolute;
+    //display: none;
+
+		&:after {
+			left: -1.25em;
+		}
+	}
+  label.show {
+    display: block;
+  }
+  label.hide {
+    display: none;
+  }
+
+}
+// 992 / Layout  =======================================
+// 992 / Layout / Logo      ============================
+
+// 992 / Layout / Nav
+.nav__wrap {
+  position:fixed;
+  z-index: 1;
+  top:0;
+  left:0;
+  right:0;
+  height: $nav-height;
+
+  .nav {
+    margin:0 auto;
+    line-height: 1;
+    text-align: center;
+
+    ul {
+      padding:0;
+
+      li {
+        display:inline-block;
+        padding:0;
+        height:  $nav-height;
+        vertical-align: middle;
+        line-height:  $nav-height;
+        margin: 0 1.5em;
+        position: relative;
+
+        &:after {
+          content: "•";
+          display: block;
+          position: absolute;
+          height:  $nav-height;
+          width: 1em;
+          top:0;
+          right: -2.25em;
+        }
+
+        &:last-child:after {
+          display:none;
+        }
+
+        a {
+          display:block;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.wrap {
+  background: transparent;
+  width: 100%;
+
+	.section__wrap {
+    width: 100%;
+
+    .section {
+      margin:0 auto;
+    }
+	}
+}
+.enqueries {
+  //overflow: auto;
+}
+
+
+
+// Layout for nice parallax effect
+html,
+body,
+.wrap {
+  height: 100%;
+}
+.wrap {
+  .section__wrap {
+    min-height: 100%;
+    padding: 0;
+
+    .section {
+      padding: 0 0 4em;
+
+      h1 {
+        padding-top:0;
+        a {
+          padding-top: $base-line-height * 1;
+          display: block;
+        }
+        
+      }
+    }
+  }
+}
+
+
+
+
+.header__wrap {
+  .section {
+    padding: 0;
+
+    h1 {
+      margin: 0;
+    }
+  }
+  .header {
+    
+    .logo {
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -$logo-width/2;
+      margin-top: -$logo-height/2 + 10px;
+    }
+    h1.logo {
+      margin-top: -$logo-height/2 + 10px;
+    }
+
+    .tagline {
+      text-indent: -9878px;
+      display: none;
+    }
+  }
+}
+.nav__wrap {
+  @include transparent-bg($orange-dot-path);
+}
+
+.about__wrap {
+  @include transparent-bg($yellow-dot-path);
+}
+
+.services__wrap {
+  @include transparent-bg($blue-dot-path);
+}
+
+.enqueries__wrap {
+  @include transparent-bg($dark-blue-dot-path);
+}
+.contacts__wrap {
+  @include transparent-bg($see-green-dot-path);
+}

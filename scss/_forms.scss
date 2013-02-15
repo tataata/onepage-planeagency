@@ -1,0 +1,178 @@
+::-webkit-input-placeholder {
+   color: rgba(225, 225, 225, 0.9); 
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(225, 225, 225, 0.9); 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(225, 225, 225, 0.9); 
+}
+
+:-ms-input-placeholder {  
+   color: rgba(225, 225, 225, 0.9); 
+}
+
+
+// FIX: Customize this!
+textarea,
+input {
+	outline: none;
+	box-shadow: none;
+}
+textarea:focus,
+input:focus {
+	//outline: 1px solid black;
+	background: transparent;
+}
+
+legend,
+label,
+input,
+textarea,
+button  {
+	display: block;
+}
+
+fieldset {
+	display:block;
+	margin:0 0 1em;
+}
+
+
+.enquery__form {
+
+	textarea,
+	label,
+	input {
+		padding: $base-line-height / 4 0;
+		color: $white;
+		font-weight: normal;
+		letter-spacing: .1ex;
+	}
+	fieldset {
+		margin-bottom: $base-line-height;
+	}
+
+	.field {
+		margin-bottom: $base-line-height;
+		position: relative;
+		//z-index: 1;
+	}
+
+	label {
+		color: rgba(225, 225, 225, 0.9); 
+		position: relative;
+		display: inline-block;
+		left: 0;
+		top: 0;
+		//z-index: 2;
+
+		&:after {
+			position: absolute;
+			display: block;
+			content: " ";
+			width: 13px;
+			height: 12px;
+			background: 0 0 url(../i/star.png) no-repeat;
+			top: .6em;
+			right: -1em;
+			opacity: .85;
+		}
+	}
+
+	.your-message {
+		label {
+			padding-left:.25em;
+		}
+	}
+
+	textarea,
+	input {
+		background: transparent;
+		border: none;
+		border-bottom: 4px solid rgba($white, .8);	
+		//@include single-box-shadow(rgba($white, 0.8), 0, 4px, 0px, 0px);
+		width:100%;
+		position: relative;
+		//z-index: 1;
+
+		&:invalid {
+			border-bottom: 4px solid $white;
+		  //@include single-box-shadow(rgba($white, 1), 0, 4px, 0px, 0px);
+		  //@include bg-rgba($white, .2);
+		}
+		   
+		&:valid {
+		  background-color: transparent;
+		  border-bottom: 4px solid rgba($white, .8);
+		  //@include single-box-shadow(rgba($white, 0.8), 0, 4px, 0px, 0px);
+		}
+		   
+		&:required {
+		  border-bottom: 4px solid rgba($white, .8);
+		  //@include single-box-shadow(rgba($white, 0.8), 0, 4px, 0px, 0px);
+		  background: transparent;
+		}
+
+	}
+
+	textarea {
+		//box-shadow: rgba(0, 0, 0, 0.5) -4px 0 0px 0;
+		@include bg-rgba($white, .08);
+		height:5em;
+
+		&:invalid {
+			border-bottom: 4px solid $white;
+			//@include single-box-shadow(rgba($white, 1), 0, 4px, 0px, 0px);
+		  @include bg-rgba($white, .2);
+		}
+		&:required {
+			@include bg-rgba($white, .08);
+		}
+	}
+
+	.optional {
+		label {
+			opacity: .5;
+
+			&:after {
+				display: none;
+			}
+		}
+		textarea,
+		input {
+			border-bottom: 4px solid rgba($white, .5);
+			//box-shadow: rgba(225, 225, 225, 0.5) 0 4px 0px 0;
+		}
+	}
+
+
+
+	button {
+		background:darken($dark-blue, 1%);
+		color: $light-blue;
+		padding: $base-line-height / 3 0;
+		text-align: center;
+		border: none;
+		width: 100%;
+		@include font-size(14);
+		text-transform: uppercase;
+		@include text-shadow(darken($dark-blue, 10%) 1px 1px 0);
+
+		&:hover {
+			color: darken($light-blue, 6%);
+			background:darken($dark-blue, 3%);
+			@include text-shadow(darken($dark-blue, 14%) 1px 1px 0);
+		}
+
+
+		&:active {
+			color:darken($light-blue, 8%);
+			@include text-shadow(darken($dark-blue, 40%) 1px 1px 0);
+			background:darken($dark-blue, 6%);
+		}
+	}
+
+}

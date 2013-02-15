@@ -1,0 +1,1642 @@
+/* ============================================================
+
+Combine with Andy Clarke's template "320 and up"
+
+320 and Up by Andy Clarke
+Version: 3.0
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+============================================================ */
+/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/* line 23, ../scss/_site.scss */
+html {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: #f3f5f6;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* Technique: http://css-tricks.com/perfect-full-page-background-image/ */
+  background: url(../i/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  font-size: 62.5%;
+}
+
+/* line 40, ../scss/_site.scss */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  font-family: "pluto-sans-cond-light", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  color: white;
+}
+
+/*::-moz-selection { background: #212f3d; color: #fff; text-shadow: none; }
+::selection { background:#212f3d; color: #fff; text-shadow: none; }*/
+@font-face {
+  font-family: 'museo_sans_cyrl_500regular';
+  src: url("../fonts/museosanscyrl_500-webfont.eot");
+  src: url("../fonts/museosanscyrl_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosanscyrl_500-webfont.woff") format("woff"), url("../fonts/museosanscyrl_500-webfont.ttf") format("truetype"), url("../fonts/museosanscyrl_500-webfont.svg#museo_sans_cyrl_500regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pluto-sans-cond-light';
+  src: url("../fonts/pluto-sans-cond-light.eot");
+  src: url("../fonts/pluto-sans-cond-light.eot") format("embedded-opentype"), url("../fonts/pluto-sans-cond-light.woff") format("woff"), url("../fonts/pluto-sans-cond-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 25, ../scss/_typography.scss */
+body {
+  font-family: "pluto-sans-cond-light", Helvetica, Arial, sans-serif;
+}
+
+/* line 29, ../scss/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+  font-family: "museo_sans_cyrl_500regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 35, ../scss/_typography.scss */
+.enquery__form button {
+  font-family: "museo_sans_cyrl_500regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 43, ../scss/_typography.scss */
+.header h1,
+.header h2,
+.contacts h1,
+.contacts h2 {
+  text-align: center;
+}
+
+/* line 48, ../scss/_typography.scss */
+h1 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 1;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 57, ../scss/_typography.scss */
+h2 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* line 64, ../scss/_typography.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 69, ../scss/_typography.scss */
+.section h1 {
+  margin-bottom: 1.5em;
+}
+
+/* line 75, ../scss/_typography.scss */
+article h1 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-top: 2.25em;
+  margin-bottom: 1.5em;
+}
+/* line 81, ../scss/_typography.scss */
+article h2 {
+  margin-bottom: 0.75em;
+}
+/* line 86, ../scss/_typography.scss */
+article li,
+article dt,
+article dd {
+  margin-bottom: 1em;
+}
+
+/* line 95, ../scss/_typography.scss */
+p,
+ol,
+ul,
+dl,
+address {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* line 101, ../scss/_typography.scss */
+.center {
+  text-align: center;
+}
+
+/* line 108, ../scss/_typography.scss */
+.nav li {
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: "museo_sans_cyrl_500regular", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 117, ../scss/_typography.scss */
+.principles {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: "museo_sans_cyrl_500regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 127, ../scss/_typography.scss */
+.enquery__form input,
+.enquery__form textarea {
+  font-family: "pluto-sans-cond-light", Helvetica, Arial, sans-serif;
+}
+
+/* line 132, ../scss/_typography.scss */
+.optional span {
+  font-style: italic;
+}
+
+/* line 139, ../scss/_typography.scss */
+.contacts h1 {
+  margin-bottom: 2em;
+}
+
+/* line 144, ../scss/_typography.scss */
+.contacts-list .text {
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+/* line 156, ../scss/_typography.scss */
+.footer .nav li {
+  font-size: 9px;
+  font-size: 0.9rem;
+}
+
+/* line 5, ../scss/_colours.scss */
+.header__wrap {
+  background: transparent;
+}
+
+/* line 8, ../scss/_colours.scss */
+.nav__wrap {
+  background: 0 0 url("../i/dot-orange.png") repeat;
+}
+
+/* line 12, ../scss/_colours.scss */
+.about__wrap {
+  background: 0 0 url("../i/dot-yellow.png") repeat;
+  text-shadow: #bf9b06 1px 1px;
+}
+/* line 16, ../scss/_colours.scss */
+.about__wrap h1 {
+  text-shadow: #bf9b06 2px 2px;
+}
+
+/* line 21, ../scss/_colours.scss */
+.services__wrap {
+  background: 0 0 url("../i/dot-blue.png") repeat;
+  text-shadow: #07699b 1px 1px;
+}
+/* line 25, ../scss/_colours.scss */
+.services__wrap h1 {
+  text-shadow: #07699b 2px 2px;
+}
+
+/* line 30, ../scss/_colours.scss */
+.enqueries__wrap {
+  background: 0 0 url("../i/dot-dark-blue.png") repeat;
+  text-shadow: #01568b 1px 1px;
+}
+/* line 34, ../scss/_colours.scss */
+.enqueries__wrap h1 {
+  text-shadow: #003759 2px 2px;
+}
+
+/* line 39, ../scss/_colours.scss */
+.contacts__wrap {
+  background: 0 0 url("../i/dot-see-green.png") repeat;
+  text-shadow: #002943 1px 1px;
+}
+/* line 43, ../scss/_colours.scss */
+.contacts__wrap h1 {
+  text-shadow: #002943 2px 2px;
+}
+
+/* line 48, ../scss/_colours.scss */
+.footer__wrap {
+  background: 0 0 url("../i/dot-black.png") repeat;
+}
+
+/* line 56, ../scss/_colours.scss */
+::-moz-selection {
+  background: #1b3f50;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 57, ../scss/_colours.scss */
+::selection {
+  background: #1b3f50;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 63, ../scss/_colours.scss */
+.nav a,
+.contacts a {
+  color: white;
+  text-decoration: none;
+}
+/* line 18, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.nav a:visited,
+.contacts a:visited {
+  color: white;
+}
+/* line 21, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.nav a:focus,
+.contacts a:focus {
+  color: white;
+}
+/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.nav a:hover,
+.contacts a:hover {
+  color: white;
+}
+/* line 27, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.nav a:active,
+.contacts a:active {
+  color: white;
+}
+
+/* line 73, ../scss/_colours.scss */
+.nav a:active span,
+.nav a.current span {
+  border-bottom: 2px solid white;
+}
+/* line 79, ../scss/_colours.scss */
+.nav #about:target {
+  border-bottom: 2px solid white;
+}
+
+/* line 90, ../scss/_colours.scss */
+.contacts .text a {
+  text-decoration: none;
+}
+/* line 93, ../scss/_colours.scss */
+.contacts .text a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* line 100, ../scss/_colours.scss */
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+/* line 18, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+h1 a:visited {
+  color: white;
+}
+/* line 21, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+h1 a:focus {
+  color: white;
+}
+/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+h1 a:hover {
+  color: white;
+}
+/* line 27, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+h1 a:active {
+  color: white;
+}
+
+/* line 1, ../scss/_forms.scss */
+::-webkit-input-placeholder {
+  color: rgba(225, 225, 225, 0.9);
+}
+
+/* line 5, ../scss/_forms.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(225, 225, 225, 0.9);
+}
+
+/* line 9, ../scss/_forms.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(225, 225, 225, 0.9);
+}
+
+/* line 13, ../scss/_forms.scss */
+:-ms-input-placeholder {
+  color: rgba(225, 225, 225, 0.9);
+}
+
+/* line 20, ../scss/_forms.scss */
+textarea,
+input {
+  outline: none;
+  box-shadow: none;
+}
+
+/* line 25, ../scss/_forms.scss */
+textarea:focus,
+input:focus {
+  background: transparent;
+}
+
+/* line 34, ../scss/_forms.scss */
+legend,
+label,
+input,
+textarea,
+button {
+  display: block;
+}
+
+/* line 38, ../scss/_forms.scss */
+fieldset {
+  display: block;
+  margin: 0 0 1em;
+}
+
+/* line 48, ../scss/_forms.scss */
+.enquery__form textarea,
+.enquery__form label,
+.enquery__form input {
+  padding: 0.375em 0;
+  color: white;
+  font-weight: normal;
+  letter-spacing: .1ex;
+}
+/* line 54, ../scss/_forms.scss */
+.enquery__form fieldset {
+  margin-bottom: 1.5em;
+}
+/* line 58, ../scss/_forms.scss */
+.enquery__form .field {
+  margin-bottom: 1.5em;
+  position: relative;
+}
+/* line 64, ../scss/_forms.scss */
+.enquery__form label {
+  color: rgba(225, 225, 225, 0.9);
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 0;
+}
+/* line 72, ../scss/_forms.scss */
+.enquery__form label:after {
+  position: absolute;
+  display: block;
+  content: " ";
+  width: 13px;
+  height: 12px;
+  background: 0 0 url(../i/star.png) no-repeat;
+  top: .6em;
+  right: -1em;
+  opacity: .85;
+}
+/* line 86, ../scss/_forms.scss */
+.enquery__form .your-message label {
+  padding-left: .25em;
+}
+/* line 92, ../scss/_forms.scss */
+.enquery__form textarea,
+.enquery__form input {
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.8);
+  width: 100%;
+  position: relative;
+}
+/* line 101, ../scss/_forms.scss */
+.enquery__form textarea:invalid,
+.enquery__form input:invalid {
+  border-bottom: 4px solid white;
+}
+/* line 107, ../scss/_forms.scss */
+.enquery__form textarea:valid,
+.enquery__form input:valid {
+  background-color: transparent;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.8);
+}
+/* line 113, ../scss/_forms.scss */
+.enquery__form textarea:required,
+.enquery__form input:required {
+  border-bottom: 4px solid rgba(255, 255, 255, 0.8);
+  background: transparent;
+}
+/* line 121, ../scss/_forms.scss */
+.enquery__form textarea {
+  background: white;
+  background: rgba(255, 255, 255, 0.08);
+  height: 5em;
+}
+/* line 126, ../scss/_forms.scss */
+.enquery__form textarea:invalid {
+  border-bottom: 4px solid white;
+  background: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+/* line 131, ../scss/_forms.scss */
+.enquery__form textarea:required {
+  background: white;
+  background: rgba(255, 255, 255, 0.08);
+}
+/* line 137, ../scss/_forms.scss */
+.enquery__form .optional label {
+  opacity: .5;
+}
+/* line 140, ../scss/_forms.scss */
+.enquery__form .optional label:after {
+  display: none;
+}
+/* line 145, ../scss/_forms.scss */
+.enquery__form .optional textarea,
+.enquery__form .optional input {
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+}
+/* line 153, ../scss/_forms.scss */
+.enquery__form button {
+  background: #0172b9;
+  color: #e2eef7;
+  padding: 0.5em 0;
+  text-align: center;
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-shadow: #01568b 1px 1px 0;
+}
+/* line 164, ../scss/_forms.scss */
+.enquery__form button:hover {
+  color: #cae0f0;
+  background: #016caf;
+  text-shadow: #014977 1px 1px 0;
+}
+/* line 171, ../scss/_forms.scss */
+.enquery__form button:active {
+  color: #c2dbee;
+  text-shadow: black 1px 1px 0;
+  background: #0162a0;
+}
+
+/* line 7, ../scss/_layout.scss */
+.nav,
+.header,
+.section {
+  width: 18.5em;
+}
+
+/* line 16, ../scss/_layout.scss */
+.footer .nav,
+.nav__wrap .nav {
+  line-height: 1;
+  text-align: left;
+  margin: 0 auto;
+}
+/* line 21, ../scss/_layout.scss */
+.footer .nav ul,
+.nav__wrap .nav ul {
+  padding: 0;
+}
+/* line 24, ../scss/_layout.scss */
+.footer .nav ul li,
+.nav__wrap .nav ul li {
+  display: inline-block;
+  position: relative;
+}
+/* line 28, ../scss/_layout.scss */
+.footer .nav ul li:after,
+.nav__wrap .nav ul li:after {
+  content: "/";
+  display: block;
+  position: absolute;
+  height: 3em;
+  width: 1em;
+  top: 0;
+  right: -0.5em;
+}
+/* line 38, ../scss/_layout.scss */
+.footer .nav ul li:last-child:after,
+.nav__wrap .nav ul li:last-child:after {
+  display: none;
+}
+/* line 42, ../scss/_layout.scss */
+.footer .nav ul li a,
+.nav__wrap .nav ul li a {
+  display: block;
+  height: 3em;
+  padding: 0 1em 0 0;
+}
+
+/* line 52, ../scss/_layout.scss */
+.wrap {
+  background: transparent;
+  width: 100%;
+}
+/* line 56, ../scss/_layout.scss */
+.wrap .section__wrap {
+  padding: 0 0 3em;
+  width: 100%;
+}
+/* line 60, ../scss/_layout.scss */
+.wrap .section__wrap .section {
+  margin: 0 auto;
+}
+/* line 64, ../scss/_layout.scss */
+.wrap .section__wrap .section h1 {
+  padding-top: 1em;
+  margin-top: 0;
+}
+
+/* line 72, ../scss/_layout.scss */
+.header__wrap {
+  padding: 0 !important;
+}
+/* line 75, ../scss/_layout.scss */
+.header__wrap .header {
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 80, ../scss/_layout.scss */
+.header__wrap .header h1,
+.header__wrap .header h2 {
+  text-align: left;
+  text-indent: -9878px;
+}
+/* line 84, ../scss/_layout.scss */
+.header__wrap .header .tagline {
+  display: none;
+}
+/* line 87, ../scss/_layout.scss */
+.header__wrap .header .logo {
+  width: 85%;
+  max-width: 580px;
+}
+/* line 91, ../scss/_layout.scss */
+.header__wrap .header .logo img {
+  width: 100%;
+  max-width: 580px;
+  display: block;
+}
+
+/* line 101, ../scss/_layout.scss */
+.principles {
+  text-align: left;
+  padding: 0;
+}
+/* line 105, ../scss/_layout.scss */
+.principles li {
+  margin: 0 1em;
+  position: relative;
+  list-style: disc;
+}
+/* line 111, ../scss/_layout.scss */
+.principles li:last-child:after {
+  display: none;
+}
+/* line 116, ../scss/_layout.scss */
+.principles li:after {
+  display: none;
+}
+
+/* line 125, ../scss/_layout.scss */
+.services__list {
+  margin: 0 auto;
+  width: 80%;
+}
+/* line 129, ../scss/_layout.scss */
+.services__list li {
+  margin-bottom: 1.5em;
+  list-style: none;
+  position: relative;
+}
+/* line 134, ../scss/_layout.scss */
+.services__list li:before {
+  display: block;
+  position: absolute;
+  content: "";
+  background: 0 0 url(../i/marker.gif) no-repeat;
+  width: 11px;
+  height: 3px;
+  top: .65em;
+  left: -1em;
+}
+/* line 146, ../scss/_layout.scss */
+.services__list li:after {
+  content: ";";
+}
+/* line 150, ../scss/_layout.scss */
+.services__list li:last-child:after {
+  content: ".";
+}
+
+/* line 159, ../scss/_layout.scss */
+.services .business-services .title,
+.services .airport .title {
+  margin-left: 60px;
+  position: relative;
+}
+/* line 163, ../scss/_layout.scss */
+.services .business-services .title .icon,
+.services .airport .title .icon {
+  position: absolute;
+  width: 46px;
+  height: 48px;
+  background: 0 0 url("../i/icon-airports.png") no-repeat;
+  /*border: 1px solid red;*/
+  bottom: 4px;
+  left: -56px;
+}
+/* line 175, ../scss/_layout.scss */
+.services .business-services .title {
+  margin-left: 60px;
+}
+/* line 178, ../scss/_layout.scss */
+.services .business-services .title .icon {
+  position: absolute;
+  width: 45px;
+  height: 61px;
+  background: 0 0 url("../i/icon-services.png") no-repeat;
+  /*border: 1px solid red;*/
+  bottom: -8px;
+  left: -56px;
+}
+
+/* line 191, ../scss/_layout.scss */
+.enqueries {
+  overflow: visible;
+}
+/* line 194, ../scss/_layout.scss */
+.enqueries .enquery__form {
+  width: 100%;
+}
+/* line 198, ../scss/_layout.scss */
+.enqueries .enquery__form .field {
+  margin: 0 0 1em;
+}
+
+/* line 207, ../scss/_layout.scss */
+.contacts .contacts-list {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+/* line 212, ../scss/_layout.scss */
+.contacts .contacts-list .contacts-list__item {
+  padding: 0;
+  margin: 0 auto 1em;
+  text-align: center;
+  clear: both;
+  white-space: nowrap;
+}
+/* line 220, ../scss/_layout.scss */
+.contacts .contacts-list .contacts-list__item .text {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 50px;
+}
+/* line 227, ../scss/_layout.scss */
+.contacts .contacts-list .email {
+  position: relative;
+}
+/* line 230, ../scss/_layout.scss */
+.contacts .contacts-list .email .text {
+  position: relative;
+}
+/* line 233, ../scss/_layout.scss */
+.contacts .contacts-list .email .text:before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 24px;
+  top: 6px;
+  left: -50px;
+  background: 0 0 url(../i/icons.png) no-repeat;
+}
+/* line 246, ../scss/_layout.scss */
+.contacts .contacts-list .phone {
+  position: relative;
+}
+/* line 249, ../scss/_layout.scss */
+.contacts .contacts-list .phone .text {
+  position: relative;
+}
+/* line 252, ../scss/_layout.scss */
+.contacts .contacts-list .phone .text:before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 6px;
+  left: -45px;
+  background: -40px 0 url(../i/icons.png) no-repeat;
+}
+
+/* line 269, ../scss/_layout.scss */
+.footer__wrap {
+  text-align: center;
+  padding: 2em 0 !important;
+}
+/* line 273, ../scss/_layout.scss */
+.footer__wrap .nav {
+  line-height: 1;
+  text-align: center;
+}
+/* line 278, ../scss/_layout.scss */
+.footer__wrap .logo {
+  margin-bottom: 1em;
+}
+/* line 281, ../scss/_layout.scss */
+.footer__wrap .nav {
+  width: 100%;
+  height: auto;
+}
+/* line 286, ../scss/_layout.scss */
+.footer__wrap .nav ul li {
+  display: inline-block;
+}
+/* line 288, ../scss/_layout.scss */
+.footer__wrap .nav ul li a {
+  height: 1em;
+  padding: 0 .8em 0 .6em;
+}
+
+/* line 298, ../scss/_layout.scss */
+.message-feedback {
+  position: fixed;
+  z-index: 4;
+  top: 3em;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+/* line 306, ../scss/_layout.scss */
+.message-feedback p {
+  display: block;
+  padding: 1.5em 0;
+  text-align: center;
+  line-height: 3em;
+  margin: 0;
+  background: 0 0 url("../i/dot-black.png") repeat;
+}
+
+/* HTML5 Boilerplate  */
+/* line 3, ../scss/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 4, ../scss/_normalize.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 5, ../scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 6, ../scss/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 8, ../scss/_normalize.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 9, ../scss/_normalize.scss */
+html, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+
+/* line 10, ../scss/_normalize.scss */
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 13, ../scss/_normalize.scss */
+a {
+  color: #00e;
+  cursor: pointer;
+}
+
+/* line 14, ../scss/_normalize.scss */
+a:visited {
+  color: #551a8b;
+}
+
+/* line 15, ../scss/_normalize.scss */
+a:hover {
+  color: #06e;
+}
+
+/* line 16, ../scss/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 17, ../scss/_normalize.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 18, ../scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 19, ../scss/_normalize.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 20, ../scss/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 21, ../scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 22, ../scss/_normalize.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 23, ../scss/_normalize.scss */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 24, ../scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 25, ../scss/_normalize.scss */
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* line 26, ../scss/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 28, ../scss/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/* line 29, ../scss/_normalize.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../scss/_normalize.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 31, ../scss/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 32, ../scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 33, ../scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 35, ../scss/_normalize.scss */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 36, ../scss/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 37, ../scss/_normalize.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 39, ../scss/_normalize.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* line 40, ../scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 41, ../scss/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 43, ../scss/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/* line 44, ../scss/_normalize.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 46, ../scss/_normalize.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 47, ../scss/_normalize.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 48, ../scss/_normalize.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 49, ../scss/_normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 50, ../scss/_normalize.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+/* line 51, ../scss/_normalize.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 52, ../scss/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px;
+}
+
+/* line 53, ../scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 54, ../scss/_normalize.scss */
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* line 55, ../scss/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 56, ../scss/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: both;
+}
+
+/* line 58, ../scss/_normalize.scss */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* line 60, ../scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 61, ../scss/_normalize.scss */
+td {
+  vertical-align: top;
+}
+
+/* line 63, ../scss/_normalize.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: black;
+  padding: 0.2em 0;
+}
+
+/* line 73, ../scss/_normalize.scss */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0;
+}
+
+/* line 74, ../scss/_normalize.scss */
+.ir br {
+  display: none;
+}
+
+/* line 75, ../scss/_normalize.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 76, ../scss/_normalize.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 77, ../scss/_normalize.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 78, ../scss/_normalize.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 79, ../scss/_normalize.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 80, ../scss/_normalize.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 81, ../scss/_normalize.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* 320 =================================================== */
+/* line 9, ../scss/_320.scss */
+.header__wrap .header .logo {
+  margin: 3em 0 3em;
+  width: 100%;
+}
+
+/* line 19, ../scss/_320.scss */
+.nav__wrap .nav ul li {
+  height: 2.14286em;
+  line-height: 2.14286em;
+}
+
+@media only screen and (min-width: 480px) {
+  /* 480 =================================================== */
+  /* line 7, ../scss/_480.scss */
+  .nav,
+  .header,
+  .section {
+    width: 26em;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* 600 =================================================== */
+  /* line 7, ../scss/_600.scss */
+  .nav,
+  .header,
+  .section {
+    width: 32em;
+  }
+
+  /* line 18, ../scss/_600.scss */
+  p,
+  ol,
+  ul,
+  dl,
+  address {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+
+  /* line 22, ../scss/_600.scss */
+  .principles {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+
+  /* line 28, ../scss/_600.scss */
+  .contacts-list .text {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+
+  /* line 42, ../scss/_600.scss */
+  .nav__wrap .nav ul li {
+    height: 3em;
+    line-height: 3em;
+  }
+
+  /* line 52, ../scss/_600.scss */
+  .principles {
+    text-align: center;
+  }
+  /* line 55, ../scss/_600.scss */
+  .principles li {
+    display: inline-block;
+    margin: 0 0.75em;
+    position: relative;
+  }
+  /* line 61, ../scss/_600.scss */
+  .principles li:last-child:after {
+    display: none;
+  }
+  /* line 66, ../scss/_600.scss */
+  .principles li:after {
+    content: "•";
+    position: absolute;
+    top: 0;
+    right: -1.15em;
+    display: block;
+  }
+
+  /* line 81, ../scss/_600.scss */
+  .enqueries .enquery__form {
+    float: left;
+  }
+  /* line 86, ../scss/_600.scss */
+  .enqueries .enquery__form .personal-info {
+    float: left;
+    width: 44%;
+  }
+  /* line 90, ../scss/_600.scss */
+  .enqueries .enquery__form .company-info {
+    float: right;
+    width: 44%;
+  }
+  /* line 94, ../scss/_600.scss */
+  .enqueries .enquery__form button {
+    float: right;
+    width: 44%;
+  }
+
+  /* line 102, ../scss/_600.scss */
+  .footer__wrap {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* 768 =================================================== */
+  /* line 7, ../scss/_768.scss */
+  .nav,
+  .header,
+  .section {
+    width: 40em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* 992 =================================================== */
+  /* line 9, ../scss/_992.scss */
+  .nav,
+  .header,
+  .section {
+    width: 46em;
+  }
+
+  /* line 15, ../scss/_992.scss */
+  h1 {
+    font-size: 36px;
+    font-size: 3.6rem;
+  }
+
+  /* line 18, ../scss/_992.scss */
+  h2 {
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+
+  /* line 22, ../scss/_992.scss */
+  article h1 {
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
+
+  /* line 30, ../scss/_992.scss */
+  p,
+  ol,
+  ul,
+  dl,
+  address {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+
+  /* line 34, ../scss/_992.scss */
+  .principles {
+    font-size: 21px;
+    font-size: 2.1rem;
+  }
+
+  /* line 39, ../scss/_992.scss */
+  .nav li {
+    font-size: 11px;
+    font-size: 1.1rem;
+  }
+
+  /* line 45, ../scss/_992.scss */
+  .contacts h1 {
+    margin-bottom: 2em;
+  }
+
+  /* line 50, ../scss/_992.scss */
+  .contacts-list .text {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+
+  /* line 58, ../scss/_992.scss */
+  .enquery__form label {
+    position: absolute;
+  }
+  /* line 62, ../scss/_992.scss */
+  .enquery__form label:after {
+    left: -1.25em;
+  }
+  /* line 66, ../scss/_992.scss */
+  .enquery__form label.show {
+    display: block;
+  }
+  /* line 69, ../scss/_992.scss */
+  .enquery__form label.hide {
+    display: none;
+  }
+
+  /* line 78, ../scss/_992.scss */
+  .nav__wrap {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3em;
+  }
+  /* line 86, ../scss/_992.scss */
+  .nav__wrap .nav {
+    margin: 0 auto;
+    line-height: 1;
+    text-align: center;
+  }
+  /* line 91, ../scss/_992.scss */
+  .nav__wrap .nav ul {
+    padding: 0;
+  }
+  /* line 94, ../scss/_992.scss */
+  .nav__wrap .nav ul li {
+    display: inline-block;
+    padding: 0;
+    height: 3em;
+    vertical-align: middle;
+    line-height: 3em;
+    margin: 0 1.5em;
+    position: relative;
+  }
+  /* line 103, ../scss/_992.scss */
+  .nav__wrap .nav ul li:after {
+    content: "•";
+    display: block;
+    position: absolute;
+    height: 3em;
+    width: 1em;
+    top: 0;
+    right: -2.25em;
+  }
+  /* line 113, ../scss/_992.scss */
+  .nav__wrap .nav ul li:last-child:after {
+    display: none;
+  }
+  /* line 117, ../scss/_992.scss */
+  .nav__wrap .nav ul li a {
+    display: block;
+    padding: 0;
+  }
+
+  /* line 127, ../scss/_992.scss */
+  .wrap {
+    background: transparent;
+    width: 100%;
+  }
+  /* line 131, ../scss/_992.scss */
+  .wrap .section__wrap {
+    width: 100%;
+  }
+  /* line 134, ../scss/_992.scss */
+  .wrap .section__wrap .section {
+    margin: 0 auto;
+  }
+
+  /* line 148, ../scss/_992.scss */
+  html,
+  body,
+  .wrap {
+    height: 100%;
+  }
+
+  /* line 152, ../scss/_992.scss */
+  .wrap .section__wrap {
+    min-height: 100%;
+    padding: 0;
+  }
+  /* line 156, ../scss/_992.scss */
+  .wrap .section__wrap .section {
+    padding: 0 0 4em;
+  }
+  /* line 159, ../scss/_992.scss */
+  .wrap .section__wrap .section h1 {
+    padding-top: 0;
+  }
+  /* line 161, ../scss/_992.scss */
+  .wrap .section__wrap .section h1 a {
+    padding-top: 1.5em;
+    display: block;
+  }
+
+  /* line 175, ../scss/_992.scss */
+  .header__wrap .section {
+    padding: 0;
+  }
+  /* line 178, ../scss/_992.scss */
+  .header__wrap .section h1 {
+    margin: 0;
+  }
+  /* line 184, ../scss/_992.scss */
+  .header__wrap .header .logo {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -290px;
+    margin-top: -48.5px;
+  }
+  /* line 192, ../scss/_992.scss */
+  .header__wrap .header h1.logo {
+    margin-top: -48.5px;
+  }
+  /* line 196, ../scss/_992.scss */
+  .header__wrap .header .tagline {
+    text-indent: -9878px;
+    display: none;
+  }
+
+  /* line 202, ../scss/_992.scss */
+  .nav__wrap {
+    background: url("../i/dot-orange.png"), url(../i/bg.jpg);
+    background-repeat: repeat, no-repeat;
+    background-position: top left, center center;
+    background-attachment: scroll, fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  }
+
+  /* line 206, ../scss/_992.scss */
+  .about__wrap {
+    background: url("../i/dot-yellow.png"), url(../i/bg.jpg);
+    background-repeat: repeat, no-repeat;
+    background-position: top left, center center;
+    background-attachment: scroll, fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  }
+
+  /* line 210, ../scss/_992.scss */
+  .services__wrap {
+    background: url("../i/dot-blue.png"), url(../i/bg.jpg);
+    background-repeat: repeat, no-repeat;
+    background-position: top left, center center;
+    background-attachment: scroll, fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  }
+
+  /* line 214, ../scss/_992.scss */
+  .enqueries__wrap {
+    background: url("../i/dot-dark-blue.png"), url(../i/bg.jpg);
+    background-repeat: repeat, no-repeat;
+    background-position: top left, center center;
+    background-attachment: scroll, fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  }
+
+  /* line 217, ../scss/_992.scss */
+  .contacts__wrap {
+    background: url("../i/dot-see-green.png"), url(../i/bg.jpg);
+    background-repeat: repeat, no-repeat;
+    background-position: top left, center center;
+    background-attachment: scroll, fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  }
+}

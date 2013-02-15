@@ -1,0 +1,43 @@
+// ROOT
+$text-color : white;
+
+// TYPOGRAPHY
+$base-font: 'pluto-sans-cond-light', Helvetica, Arial, sans-serif;
+$headings : 'museo_sans_cyrl_500regular', Helvetica, Arial, sans-serif;
+$base-font-size : 16;
+$base-line-height : 1.5em;
+
+
+
+// COLOURS 				==============================
+
+$base-color: rgb(45,53,62);
+$comp-color: adjust-hue($base-color, 180);
+$border-color: lighten($base-color, 60%);
+
+$white: #fff;
+$black: #000;
+$light-blue: #e2eef7;//#cee0ed;
+
+// Backgrounds of sections
+$yellow: #f9d232;//rgb(250,206,32);
+$yellow-alpha:  .73;
+$yellow-dot-path: "../i/dot-yellow.png";
+$orange: rgb(249,112,1);
+$orange-dot-path: "../i/dot-orange.png";
+$blue: #13a8f5;//rgb(0,178,236);
+$blue-dot-path: "../i/dot-blue.png";
+$dark-blue: #0175be;//rgb(1,103,155);
+$dark-blue-alpha: .92;
+$dark-blue-dot-path: "../i/dot-dark-blue.png";
+$dark-dark-blue: #01456f;
+$see-green: #004976;
+$see-green-alpha:  .85;
+$see-green-dot-path: "../i/dot-see-green.png";
+$black-dot-path: "../i/dot-black.png";
+
+
+// LAYOUT   		=================================
+$nav-height: 3em;
+$logo-height: 117px;
+$logo-width: 580px;
