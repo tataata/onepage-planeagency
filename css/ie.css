@@ -114,7 +114,7 @@ body {
   position: relative;
   background-color: transparent;
   font-family: "pluto-sans-cond-light", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 25.6px;
   font-size: 1.6rem;
   line-height: 1.5em;
   color: white;
@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 48, ../scss/_typography.scss */
 h1 {
-  font-size: 24px;
+  font-size: 38.4px;
   font-size: 2.4rem;
   line-height: 1;
   margin-top: 1.5em;
@@ -175,7 +175,7 @@ h1 {
 
 /* line 57, ../scss/_typography.scss */
 h2 {
-  font-size: 18px;
+  font-size: 28.8px;
   font-size: 1.8rem;
   line-height: 1;
   margin-top: 1.5em;
@@ -194,7 +194,7 @@ strong {
 
 /* line 75, ../scss/_typography.scss */
 article h1 {
-  font-size: 16px;
+  font-size: 25.6px;
   font-size: 1.6rem;
   line-height: 1;
   margin-top: 2.25em;
@@ -217,7 +217,7 @@ ol,
 ul,
 dl,
 address {
-  font-size: 12px;
+  font-size: 19.2px;
   font-size: 1.2rem;
   line-height: 1.5em;
   margin-bottom: 1.5em;
@@ -230,7 +230,7 @@ address {
 
 /* line 109, ../scss/_typography.scss */
 .nav li {
-  font-size: 12px;
+  font-size: 19.2px;
   font-size: 1.2rem;
   font-family: "museo_sans_cyrl_500regular", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -238,7 +238,7 @@ address {
 
 /* line 118, ../scss/_typography.scss */
 .principles {
-  font-size: 16px;
+  font-size: 25.6px;
   font-size: 1.6rem;
   font-family: "museo_sans_cyrl_500regular", Helvetica, Arial, sans-serif;
 }
@@ -261,18 +261,18 @@ address {
 
 /* line 145, ../scss/_typography.scss */
 .contacts-list .text {
-  font-size: 13px;
+  font-size: 20.8px;
   font-size: 1.3rem;
 }
 
 /* line 154, ../scss/_typography.scss */
 .footer .nav li {
-  font-size: 9px;
+  font-size: 14.4px;
   font-size: 0.9rem;
 }
 /* line 159, ../scss/_typography.scss */
 .footer .copyright {
-  font-size: 9px;
+  font-size: 14.4px;
   font-size: 0.9rem;
 }
 
@@ -570,7 +570,7 @@ fieldset {
   text-align: center;
   border: none;
   width: 100%;
-  font-size: 14px;
+  font-size: 22.4px;
   font-size: 1.4rem;
   text-transform: uppercase;
   text-shadow: #01568b 1px 1px 0;
@@ -1306,19 +1306,19 @@ td {
 
 /* line 15, ../scss/_992.scss */
 h1 {
-  font-size: 36px;
+  font-size: 57.6px;
   font-size: 3.6rem;
 }
 
 /* line 18, ../scss/_992.scss */
 h2 {
-  font-size: 24px;
+  font-size: 38.4px;
   font-size: 2.4rem;
 }
 
 /* line 22, ../scss/_992.scss */
 article h1 {
-  font-size: 22px;
+  font-size: 35.2px;
   font-size: 2.2rem;
 }
 
@@ -1328,19 +1328,19 @@ ol,
 ul,
 dl,
 address {
-  font-size: 15px;
+  font-size: 24px;
   font-size: 1.5rem;
 }
 
 /* line 34, ../scss/_992.scss */
 .principles {
-  font-size: 21px;
+  font-size: 33.6px;
   font-size: 2.1rem;
 }
 
 /* line 39, ../scss/_992.scss */
 .nav li {
-  font-size: 11px;
+  font-size: 17.6px;
   font-size: 1.1rem;
 }
 
@@ -1351,18 +1351,18 @@ address {
 
 /* line 50, ../scss/_992.scss */
 .contacts-list .text {
-  font-size: 18px;
+  font-size: 28.8px;
   font-size: 1.8rem;
 }
 
 /* line 56, ../scss/_992.scss */
 .footer .nav li {
-  font-size: 11px;
+  font-size: 17.6px;
   font-size: 1.1rem;
 }
 /* line 61, ../scss/_992.scss */
 .footer .copyright {
-  font-size: 11px;
+  font-size: 17.6px;
   font-size: 1.1rem;
 }
 
