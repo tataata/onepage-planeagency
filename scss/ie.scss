@@ -37,6 +37,13 @@
 
 @import "_forms";
 
+.enquery__form {
+	textarea {
+		background: none;
+		background: 0 0 url(../i/dot-white.png) repeat;
+	}
+}
+
 // 6. LAYOUT 			==============================
 
 // Page level layout styles (banner, navigation, content, contentinfo)

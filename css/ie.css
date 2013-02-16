@@ -538,37 +538,36 @@ fieldset {
 }
 /* line 120, ../scss/_forms.scss */
 .enquery__form textarea {
-  background: 0 0 url(../i/dot-white.png) repeat;
   background: white;
   background: rgba(255, 255, 255, 0.08);
   height: 5em;
 }
-/* line 125, ../scss/_forms.scss */
+/* line 124, ../scss/_forms.scss */
 .enquery__form textarea:invalid {
   border-bottom: 4px solid white;
   background: white;
   background: rgba(255, 255, 255, 0.2);
 }
-/* line 129, ../scss/_forms.scss */
+/* line 128, ../scss/_forms.scss */
 .enquery__form textarea:required {
   background: white;
   background: rgba(255, 255, 255, 0.08);
 }
-/* line 135, ../scss/_forms.scss */
+/* line 134, ../scss/_forms.scss */
 .enquery__form .optional label {
   opacity: .5;
 }
-/* line 138, ../scss/_forms.scss */
+/* line 137, ../scss/_forms.scss */
 .enquery__form .optional label:after {
   display: none;
 }
-/* line 143, ../scss/_forms.scss */
+/* line 142, ../scss/_forms.scss */
 .enquery__form .optional textarea,
 .enquery__form .optional input {
   border-bottom: 4px solid white;
   border-bottom: 4px solid rgba(255, 255, 255, 0.5);
 }
-/* line 152, ../scss/_forms.scss */
+/* line 151, ../scss/_forms.scss */
 .enquery__form button {
   background: #0172b9;
   color: #e2eef7;
@@ -581,17 +580,23 @@ fieldset {
   text-transform: uppercase;
   text-shadow: #01568b 1px 1px 0;
 }
-/* line 163, ../scss/_forms.scss */
+/* line 162, ../scss/_forms.scss */
 .enquery__form button:hover {
   color: #cae0f0;
   background: #016caf;
   text-shadow: #014977 1px 1px 0;
 }
-/* line 170, ../scss/_forms.scss */
+/* line 169, ../scss/_forms.scss */
 .enquery__form button:active {
   color: #c2dbee;
   text-shadow: black 1px 1px 0;
   background: #0162a0;
+}
+
+/* line 41, ../scss/ie.scss */
+.enquery__form textarea {
+  background: none;
+  background: 0 0 url(../i/dot-white.png) repeat;
 }
 
 /* line 7, ../scss/_layout.scss */

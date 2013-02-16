@@ -118,7 +118,6 @@ fieldset {
 	}
 
 	textarea {
-		background: 0 0 url(../i/dot-white.png) repeat;
 		@include bg-rgba($white, .08);
 		height:5em;
 
