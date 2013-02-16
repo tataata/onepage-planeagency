@@ -23,6 +23,8 @@
 
       li {
         display: inline-block;
+        *display: inline;
+        *zoom: 1;
         position: relative;
 
         &:after {
@@ -240,6 +242,8 @@
 
       .text {
         display: inline-block;
+        *display: inline;
+        *zoom: 1;
         margin-bottom: 0;
         margin-left: 50px; // = width of icon for proper text aligment
       }
@@ -328,6 +332,8 @@
     ul {
       li {
         display: inline-block;
+        *display: inline;
+        *zoom: 1;
         a {
           height: $nav-height / 3;
           padding: 0 .8em 0 .6em;

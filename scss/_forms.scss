@@ -63,6 +63,7 @@ fieldset {
 	}
 
 	label {
+		color: $white;
 		color: rgba(225, 225, 225, 0.9); 
 		position: relative;
 		display: inline-block;
@@ -93,6 +94,7 @@ fieldset {
 	input {
 		background: transparent;
 		border: none;
+		border-bottom: 4px solid $white;
 		border-bottom: 4px solid rgba($white, .8);	
 		//@include single-box-shadow(rgba($white, 0.8), 0, 4px, 0px, 0px);
 		width:100%;
@@ -107,11 +109,13 @@ fieldset {
 		   
 		&:valid {
 		  background-color: transparent;
+		  border-bottom: 4px solid $white;
 		  border-bottom: 4px solid rgba($white, .8);
 		  //@include single-box-shadow(rgba($white, 0.8), 0, 4px, 0px, 0px);
 		}
 		   
 		&:required {
+		  border-bottom: 4px solid $white;
 		  border-bottom: 4px solid rgba($white, .8);
 		  //@include single-box-shadow(rgba($white, 0.8), 0, 4px, 0px, 0px);
 		  background: transparent;
@@ -144,6 +148,7 @@ fieldset {
 		}
 		textarea,
 		input {
+			border-bottom: 4px solid $white;
 			border-bottom: 4px solid rgba($white, .5);
 			//box-shadow: rgba(225, 225, 225, 0.5) 0 4px 0px 0;
 		}
