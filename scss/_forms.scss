@@ -96,41 +96,34 @@ fieldset {
 		border: none;
 		border-bottom: 4px solid $white;
 		border-bottom: 4px solid rgba($white, .8);	
-		//@include single-box-shadow(rgba($white, 0.8), 0, 4px, 0px, 0px);
 		width:100%;
 		position: relative;
-		//z-index: 1;
 
 		&:invalid {
 			border-bottom: 4px solid $white;
-		  //@include single-box-shadow(rgba($white, 1), 0, 4px, 0px, 0px);
-		  //@include bg-rgba($white, .2);
 		}
 		   
 		&:valid {
 		  background-color: transparent;
 		  border-bottom: 4px solid $white;
 		  border-bottom: 4px solid rgba($white, .8);
-		  //@include single-box-shadow(rgba($white, 0.8), 0, 4px, 0px, 0px);
 		}
 		   
 		&:required {
 		  border-bottom: 4px solid $white;
 		  border-bottom: 4px solid rgba($white, .8);
-		  //@include single-box-shadow(rgba($white, 0.8), 0, 4px, 0px, 0px);
 		  background: transparent;
 		}
 
 	}
 
 	textarea {
-		//box-shadow: rgba(0, 0, 0, 0.5) -4px 0 0px 0;
+		background: 0 0 url(../i/dot-white.png) repeat;
 		@include bg-rgba($white, .08);
 		height:5em;
 
 		&:invalid {
 			border-bottom: 4px solid $white;
-			//@include single-box-shadow(rgba($white, 1), 0, 4px, 0px, 0px);
 		  @include bg-rgba($white, .2);
 		}
 		&:required {

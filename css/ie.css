@@ -517,57 +517,58 @@ fieldset {
   width: 100%;
   position: relative;
 }
-/* line 104, ../scss/_forms.scss */
+/* line 102, ../scss/_forms.scss */
 .enquery__form textarea:invalid,
 .enquery__form input:invalid {
   border-bottom: 4px solid white;
 }
-/* line 110, ../scss/_forms.scss */
+/* line 106, ../scss/_forms.scss */
 .enquery__form textarea:valid,
 .enquery__form input:valid {
   background-color: transparent;
   border-bottom: 4px solid white;
   border-bottom: 4px solid rgba(255, 255, 255, 0.8);
 }
-/* line 117, ../scss/_forms.scss */
+/* line 112, ../scss/_forms.scss */
 .enquery__form textarea:required,
 .enquery__form input:required {
   border-bottom: 4px solid white;
   border-bottom: 4px solid rgba(255, 255, 255, 0.8);
   background: transparent;
 }
-/* line 126, ../scss/_forms.scss */
+/* line 120, ../scss/_forms.scss */
 .enquery__form textarea {
+  background: 0 0 url(../i/dot-white.png) repeat;
   background: white;
   background: rgba(255, 255, 255, 0.08);
   height: 5em;
 }
-/* line 131, ../scss/_forms.scss */
+/* line 125, ../scss/_forms.scss */
 .enquery__form textarea:invalid {
   border-bottom: 4px solid white;
   background: white;
   background: rgba(255, 255, 255, 0.2);
 }
-/* line 136, ../scss/_forms.scss */
+/* line 129, ../scss/_forms.scss */
 .enquery__form textarea:required {
   background: white;
   background: rgba(255, 255, 255, 0.08);
 }
-/* line 142, ../scss/_forms.scss */
+/* line 135, ../scss/_forms.scss */
 .enquery__form .optional label {
   opacity: .5;
 }
-/* line 145, ../scss/_forms.scss */
+/* line 138, ../scss/_forms.scss */
 .enquery__form .optional label:after {
   display: none;
 }
-/* line 150, ../scss/_forms.scss */
+/* line 143, ../scss/_forms.scss */
 .enquery__form .optional textarea,
 .enquery__form .optional input {
   border-bottom: 4px solid white;
   border-bottom: 4px solid rgba(255, 255, 255, 0.5);
 }
-/* line 159, ../scss/_forms.scss */
+/* line 152, ../scss/_forms.scss */
 .enquery__form button {
   background: #0172b9;
   color: #e2eef7;
@@ -580,13 +581,13 @@ fieldset {
   text-transform: uppercase;
   text-shadow: #01568b 1px 1px 0;
 }
-/* line 170, ../scss/_forms.scss */
+/* line 163, ../scss/_forms.scss */
 .enquery__form button:hover {
   color: #cae0f0;
   background: #016caf;
   text-shadow: #014977 1px 1px 0;
 }
-/* line 177, ../scss/_forms.scss */
+/* line 170, ../scss/_forms.scss */
 .enquery__form button:active {
   color: #c2dbee;
   text-shadow: black 1px 1px 0;
