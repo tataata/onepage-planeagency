@@ -54,6 +54,8 @@ address {
 
   li {
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
     margin:0 $base-line-height / 2;
     position: relative;
 

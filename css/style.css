@@ -1378,14 +1378,16 @@ td {
   /* line 55, ../scss/_600.scss */
   .principles li {
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
     margin: 0 0.75em;
     position: relative;
   }
-  /* line 61, ../scss/_600.scss */
+  /* line 63, ../scss/_600.scss */
   .principles li:last-child:after {
     display: none;
   }
-  /* line 66, ../scss/_600.scss */
+  /* line 68, ../scss/_600.scss */
   .principles li:after {
     content: "•";
     position: absolute;
@@ -1394,21 +1396,21 @@ td {
     display: block;
   }
 
-  /* line 81, ../scss/_600.scss */
+  /* line 83, ../scss/_600.scss */
   .enqueries .enquery__form {
     float: left;
   }
-  /* line 86, ../scss/_600.scss */
+  /* line 88, ../scss/_600.scss */
   .enqueries .enquery__form .personal-info {
     float: left;
     width: 44%;
   }
-  /* line 90, ../scss/_600.scss */
+  /* line 92, ../scss/_600.scss */
   .enqueries .enquery__form .company-info {
     float: right;
     width: 44%;
   }
-  /* line 94, ../scss/_600.scss */
+  /* line 96, ../scss/_600.scss */
   .enqueries .enquery__form button {
     float: right;
     width: 44%;
