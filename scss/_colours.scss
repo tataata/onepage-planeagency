@@ -6,7 +6,8 @@
   background: transparent;
 }
 .nav__wrap {
-  background: 0 0 url($orange-dot-path) repeat;
+  //background: 0 0 url($orange-dot-path) repeat;
+  background-color: $orange;
 }
 .about__wrap {
   background: 0 0 url($yellow-dot-path) repeat;

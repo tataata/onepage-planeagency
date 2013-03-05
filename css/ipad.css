@@ -317,69 +317,69 @@ address {
 
 /* line 8, ../scss/_colours.scss */
 .nav__wrap {
-  background: 0 0 url("../i/dot-orange.png") repeat;
+  background-color: #f97001;
 }
 
-/* line 11, ../scss/_colours.scss */
+/* line 12, ../scss/_colours.scss */
 .about__wrap {
   background: 0 0 url("../i/dot-yellow.png") repeat;
   text-shadow: #bf9b06 1px 1px;
 }
-/* line 14, ../scss/_colours.scss */
+/* line 15, ../scss/_colours.scss */
 .about__wrap h1 {
   text-shadow: #bf9b06 2px 2px;
 }
 
-/* line 19, ../scss/_colours.scss */
+/* line 20, ../scss/_colours.scss */
 .services__wrap {
   background: 0 0 url("../i/dot-blue.png") repeat;
   text-shadow: #07699b 1px 1px;
 }
-/* line 22, ../scss/_colours.scss */
+/* line 23, ../scss/_colours.scss */
 .services__wrap h1 {
   text-shadow: #07699b 2px 2px;
 }
 
-/* line 27, ../scss/_colours.scss */
+/* line 28, ../scss/_colours.scss */
 .enqueries__wrap {
   background: 0 0 url("../i/dot-dark-blue.png") repeat;
   text-shadow: #01568b 1px 1px;
 }
-/* line 30, ../scss/_colours.scss */
+/* line 31, ../scss/_colours.scss */
 .enqueries__wrap h1 {
   text-shadow: #003759 2px 2px;
 }
 
-/* line 35, ../scss/_colours.scss */
+/* line 36, ../scss/_colours.scss */
 .contacts__wrap {
   background: 0 0 url("../i/dot-see-green.png") repeat;
   text-shadow: #002943 1px 1px;
 }
-/* line 38, ../scss/_colours.scss */
+/* line 39, ../scss/_colours.scss */
 .contacts__wrap h1 {
   text-shadow: #002943 2px 2px;
 }
 
-/* line 43, ../scss/_colours.scss */
+/* line 44, ../scss/_colours.scss */
 .footer__wrap {
   background: 0 0 url("../i/dot-black.png") repeat;
 }
 
-/* line 50, ../scss/_colours.scss */
+/* line 51, ../scss/_colours.scss */
 ::-moz-selection {
   background: #1b3f50;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 51, ../scss/_colours.scss */
+/* line 52, ../scss/_colours.scss */
 ::selection {
   background: #1b3f50;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 57, ../scss/_colours.scss */
+/* line 58, ../scss/_colours.scss */
 .nav a,
 .contacts a {
   color: white;
@@ -406,26 +406,26 @@ address {
   color: white;
 }
 
-/* line 67, ../scss/_colours.scss */
+/* line 68, ../scss/_colours.scss */
 .nav a:active span,
 .nav a.current span {
   border-bottom: 2px solid white;
 }
-/* line 71, ../scss/_colours.scss */
+/* line 72, ../scss/_colours.scss */
 .nav #about:target {
   border-bottom: 2px solid white;
 }
 
-/* line 79, ../scss/_colours.scss */
+/* line 80, ../scss/_colours.scss */
 .contacts .text a {
   text-decoration: none;
 }
-/* line 82, ../scss/_colours.scss */
+/* line 83, ../scss/_colours.scss */
 .contacts .text a:hover {
   border-bottom: 2px solid white;
 }
 
-/* line 89, ../scss/_colours.scss */
+/* line 90, ../scss/_colours.scss */
 h1 a {
   color: white;
   text-decoration: none;
