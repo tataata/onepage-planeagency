@@ -26,16 +26,5 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
 
-@mixin transparent-bg-ipad($path-to-transparent-color) {
-  background: url($path-to-transparent-color), url(../i/bg.jpg);
-  background-repeat:  repeat, no-repeat;
-  background-position: top left, center top;
-  background-attachment: scroll, fixed; 
-  -webkit-background-size: auto,  1534px 1024px; // fix not correct scaling in safari on ipad
-}
-
-
 @import "compass/css3/box-shadow";
 @import "compass/css3/text-shadow";
-
-

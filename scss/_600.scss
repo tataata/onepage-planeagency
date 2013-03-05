@@ -54,8 +54,6 @@ address {
 
   li {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
     margin:0 $base-line-height / 2;
     position: relative;
 
@@ -70,9 +68,7 @@ address {
       position: absolute;
       top: 0;
       right: -$base-line-height / 2 - .4em;
-      display: block;
-
-      
+      display: block;      
     }
   }
 }
@@ -82,8 +78,6 @@ address {
 
   .enquery__form {
     float: left;
-
-
 
     .personal-info {
       float: left;

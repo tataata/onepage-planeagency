@@ -817,9 +817,9 @@ fieldset {
 .services .business-services .title .icon,
 .services .airport .title .icon {
   position: absolute;
-  width: 46px;
+  width: 48px;
   height: 48px;
-  background: 0 0 url("../i/icon-airports.png") no-repeat;
+  background: -80px 0 url("../i/icons.png") no-repeat;
   /*border: 1px solid red;*/
   bottom: 4px;
   left: -56px;
@@ -831,9 +831,9 @@ fieldset {
 /* line 202, ../scss/_layout.scss */
 .services .business-services .title .icon {
   position: absolute;
-  width: 45px;
-  height: 61px;
-  background: 0 0 url("../i/icon-services.png") no-repeat;
+  width: 47px;
+  height: 63px;
+  background: -140px 0 url("../i/icons.png") no-repeat;
   /*border: 1px solid red;*/
   bottom: -8px;
   left: -56px;
@@ -1398,16 +1398,14 @@ address {
 /* line 55, ../scss/_600.scss */
 .principles li {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
   margin: 0 0.75em;
   position: relative;
 }
-/* line 63, ../scss/_600.scss */
+/* line 61, ../scss/_600.scss */
 .principles li:last-child:after {
   display: none;
 }
-/* line 68, ../scss/_600.scss */
+/* line 66, ../scss/_600.scss */
 .principles li:after {
   content: "•";
   position: absolute;
@@ -1416,24 +1414,34 @@ address {
   display: block;
 }
 
-/* line 83, ../scss/_600.scss */
+/* line 79, ../scss/_600.scss */
 .enqueries .enquery__form {
   float: left;
 }
-/* line 88, ../scss/_600.scss */
+/* line 82, ../scss/_600.scss */
 .enqueries .enquery__form .personal-info {
   float: left;
   width: 44%;
 }
-/* line 92, ../scss/_600.scss */
+/* line 86, ../scss/_600.scss */
 .enqueries .enquery__form .company-info {
   float: right;
   width: 44%;
 }
-/* line 96, ../scss/_600.scss */
+/* line 90, ../scss/_600.scss */
 .enqueries .enquery__form button {
   float: right;
   width: 44%;
+}
+
+/* line 77, ../scss/ie.scss */
+.principles li {
+  *display: inline;
+  *zoom: 1;
+}
+/* line 81, ../scss/ie.scss */
+.principles li:after {
+  display: none\9;
 }
 
 /* 992 =================================================== */
@@ -1646,4 +1654,9 @@ body,
 /* line 216, ../scss/_992.scss */
 .nav__wrap {
   z-index: 4;
+}
+
+/* line 95, ../scss/ie.scss */
+.nav__wrap .nav ul li:after {
+  display: none\9;
 }

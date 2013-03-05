@@ -54,6 +54,9 @@
 // Page level layout styles (banner, navigation, content, contentinfo)
 @import "_layout";
 
+
+
+
 //  7. VENDOR-SPECIFIC 		==============================
 //  8. MODERNIZR 			==============================
 
@@ -67,8 +70,36 @@
 // 600px
 @import "_600";
 
+// Customs for IE
+
+.principles {
+
+  li {
+    *display: inline;
+    *zoom: 1;
+
+    &:after {
+      display: none\9;      
+    }
+  }
+}
+
+
 // 992px
 @import "_992";
+
+.nav__wrap {
+  .nav {
+    ul {
+      li {
+        &:after {
+          display: none\9;
+        }
+      }
+    }
+  }
+}
+
 
 
 // 2x
