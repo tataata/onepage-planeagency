@@ -1,0 +1,89 @@
+// Ipad styles
+
+// CSS reset
+@import "compass/reset";
+
+
+// Variables and mixins
+@import "_variables";
+@import "_mixins";
+
+
+
+// Site wide styles (html, body)
+@import "_site";
+
+html {
+	//background-image: url(../i/bg.jpg);
+	//background-position: 0 0;
+	background:  none;
+ // -webkit-background-size: 1534px 1024px; // fix not correct scaling in safari on ipad
+}
+
+
+// 2. TYPOGRAPHY 			==============================
+@import "_typography";
+
+
+// 3. COLOUR 				==============================
+@import "_colours";
+
+// 4. TEXTURE 				==============================
+
+
+// 5. ELEMENTS 				==============================
+
+// Figures, images and other elements
+
+
+// Standard form controls
+
+@import "_forms";
+
+
+
+// 6. LAYOUT 			==============================
+
+// Page level layout styles (banner, navigation, content, contentinfo)
+@import "_layout";
+
+//  7. VENDOR-SPECIFIC 		==============================
+//  8. MODERNIZR 			==============================
+
+@import "_normalize";
+
+//  9. TEMPLATE SPECIFICS 	==============================
+
+
+//  10. MEDIA QUERIES 		==============================
+
+// 600px
+@import "_600";
+
+// 992px
+@import "_992";
+
+.nav__wrap {
+  background: none;
+}
+
+.about__wrap {
+  background: none;
+}
+
+.services__wrap {
+  background: none;
+}
+
+.enqueries__wrap {
+  background: none;
+}
+.contacts__wrap {
+  background: none;
+}
+
+// 2x
+
+
+//  11. UPSTARTS 			==============================
+

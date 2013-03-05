@@ -19,11 +19,12 @@
   <![endif]-->
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css" >
+  <!-- <link rel="stylesheet" media="all and (min-device-width : 768px)  and (max-device-width: 1024px)" href="css/ipad.css" type="text/css" /> -->
   <!--[if (gt IE 8) | (IEMobile)]><!-->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css" >
   <!--<![endif]-->
 
   <!--[if (lt IE 9) & (!IEMobile)]>
@@ -56,9 +57,10 @@
 
   <div class="wrap"  role="main">
     <!-- Feedback message ufter sending message -->
-    <div class="message-feedback" id="thank-you">
+    <div class="message-feedback" id="thank-you"></div>
+    
 
-    </div>
+    
     <script>
       (function() {
         var isThankYou = location.search.indexOf('email=thankyou') !== -1,
@@ -209,8 +211,9 @@
       </section>
     </div><!-- /section__wrap -->
 
-
+    
   </div><!-- /wrap -->
+  <div class="bg"><img src=/i/bg.jpg></div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>

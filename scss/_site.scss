@@ -26,17 +26,22 @@ html {
   -webkit-tap-highlight-color : lighten($base-color, 75%);
   -webkit-text-size-adjust : 100%;
   -ms-text-size-adjust : 100%;
+  background-color : transparent;
+  font-size : 62.5%;
   /* Technique: http://css-tricks.com/perfect-full-page-background-image/ */
-  background: url(../i/bg.jpg)  center center no-repeat fixed; 
+  /*background-image: url(../i/bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
   
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
- // -webkit-background-size: 1534px 1024px; // fix not correct scaling in safari on ipad
+  //-webkit-background-size: cover;
+  //-moz-background-size: cover;
+  //-o-background-size: cover;
+  //background-size: cover;
+  -webkit-background-size: 1534px 1024px; // fix not correct scaling in safari on ipad
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-  font-size : 62.5%;
+  */
 }
 
 
@@ -46,10 +51,34 @@ body {
   padding : 0;
   width : 100%;
   position:relative;
-  background-color : transparent;
+  
   font-family : $base-font;
   @include font-size();
   line-height : $base-line-height;
   color : $text-color; 
+
+}
+
+
+.bg {
+  position: fixed;
+
+  z-index: 0;
+
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+
+  img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    //min-width: 50%;
+    //min-height: 50%;
+  }
 }
 

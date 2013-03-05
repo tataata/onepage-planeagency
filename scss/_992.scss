@@ -163,9 +163,15 @@ body,
   height: 100%;
 }
 .wrap {
+  position: relative;
+  z-index: 1;
+
+
   .section__wrap {
     min-height: 100%;
     padding: 0;
+    position: relative;
+    z-index: 2;
 
     .section {
       padding: 0 0 4em;
@@ -181,9 +187,6 @@ body,
     }
   }
 }
-
-
-
 
 .header__wrap {
   .section {
@@ -214,20 +217,21 @@ body,
   }
 }
 .nav__wrap {
-  @include transparent-bg($orange-dot-path);
+  z-index:4;
+  //@include transparent-bg($orange-dot-path);
 }
 
 .about__wrap {
-  @include transparent-bg($yellow-dot-path);
+ // @include transparent-bg($yellow-dot-path);
 }
 
 .services__wrap {
-  @include transparent-bg($blue-dot-path);
+  //@include transparent-bg($blue-dot-path);
 }
 
 .enqueries__wrap {
-  @include transparent-bg($dark-blue-dot-path);
+  //@include transparent-bg($dark-blue-dot-path);
 }
 .contacts__wrap {
-  @include transparent-bg($see-green-dot-path);
+  //@include transparent-bg($see-green-dot-path);
 }
