@@ -1367,26 +1367,6 @@ td {
   .section {
     width: 26em;
   }
-
-  /* line 11, ../scss/_480.scss */
-  .bg {
-    display: none;
-  }
-
-  /* line 15, ../scss/_480.scss */
-  html {
-    /* Technique: http://css-tricks.com/perfect-full-page-background-image/ */
-    background-image: url(../i/bg-s.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/bg-s.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/bg-s.jpg', sizingMethod='scale')";
-  }
 }
 @media only screen and (min-width: 600px) {
   /* 600 =================================================== */
