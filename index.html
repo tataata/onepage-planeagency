@@ -58,9 +58,6 @@
   <div class="wrap"  role="main">
     <!-- Feedback message ufter sending message -->
     <div class="message-feedback" id="thank-you"></div>
-    
-
-    
     <script>
       (function() {
         var isThankYou = location.search.indexOf('email=thankyou') !== -1,
@@ -217,32 +214,7 @@
   <div class="bg"><img src=/i/bg.jpg></div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
-  <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
 
-  <script>
-    $(".input")
-      .focus(function () {
-        $(this).prev("label").removeClass("show").addClass("hide");
-      })
-      .blur(function() {
-        if ($(this).val() === '') {
-          $(this).prev("label").addClass("show").removeClass("hide");
-        }
-      });
-
-  </script>
-  
-
-
-  <!-- Google Analytics -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_tracksectionview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
 </body>
 </html>
