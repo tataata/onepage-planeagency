@@ -65,10 +65,10 @@ body {
 
   z-index: 0;
 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
+  top: -42%; 
+  left: -42%; 
+  width: 184%; 
+  height: 184%;
 
   img {
     position: absolute; 
@@ -77,8 +77,15 @@ body {
     right: 0; 
     bottom: 0; 
     margin: auto; 
+    width: 100%;
+    height: auto;
+  
     //min-width: 50%;
     //min-height: 50%;
   }
 }
 
+.wrap {
+  position: relative;
+  z-index:1;
+}

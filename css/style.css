@@ -135,10 +135,10 @@ body {
 .bg {
   position: fixed;
   z-index: 0;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  top: -42%;
+  left: -42%;
+  width: 184%;
+  height: 184%;
 }
 /* line 73, ../scss/_site.scss */
 .bg img {
@@ -148,6 +148,14 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+/* line 88, ../scss/_site.scss */
+.wrap {
+  position: relative;
+  z-index: 1;
 }
 
 /*::-moz-selection { background: #212f3d; color: #fff; text-shadow: none; }
