@@ -62,9 +62,7 @@ body {
 
 .bg {
   position: fixed;
-
   z-index: 0;
-
   top: -45%; 
   left: -45%; 
   width: 190%; 
@@ -77,11 +75,8 @@ body {
     right: 0; 
     bottom: 0; 
     margin: auto; 
-    //width: 100%;
-    //height: auto;
-  
-    //min-width: 50%;
-    //min-height: 50%;
+    width: 100%;
+    height: auto;
   }
 }
 

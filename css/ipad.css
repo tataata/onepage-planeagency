@@ -130,7 +130,7 @@ body {
   width: 190%;
   height: 190%;
 }
-/* line 73, ../scss/_site.scss */
+/* line 71, ../scss/_site.scss */
 .bg img {
   position: absolute;
   top: 0;
@@ -138,9 +138,11 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
+  width: 100%;
+  height: auto;
 }
 
-/* line 88, ../scss/_site.scss */
+/* line 83, ../scss/_site.scss */
 .wrap {
   position: relative;
   z-index: 1;
