@@ -8,3 +8,23 @@
   width:26em;
 }
 
+.bg {
+	display: none;
+}
+
+html {
+
+  /* Technique: http://css-tricks.com/perfect-full-page-background-image/ */
+  background-image: url(../i/bg-s.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/bg-s.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/bg-s.jpg', sizingMethod='scale')";
+  
+}

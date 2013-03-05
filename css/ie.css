@@ -138,19 +138,28 @@ body {
 /* line 71, ../scss/_site.scss */
 .bg img {
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 100%;
-  height: auto;
+  min-width: 50%;
+  min-height: 50%;
 }
 
-/* line 83, ../scss/_site.scss */
+/* line 84, ../scss/_site.scss */
 .wrap {
   position: relative;
   z-index: 1;
+}
+
+/* line 20, ../scss/ie.scss */
+.bg img {
+  *width: 100%;
+  /* IE7 and below */
+  *height: auto;
+  /* IE7 and below */
 }
 
 /*::-moz-selection { background: #212f3d; color: #fff; text-shadow: none; }
@@ -626,7 +635,7 @@ fieldset {
   background: #0162a0;
 }
 
-/* line 41, ../scss/ie.scss */
+/* line 46, ../scss/ie.scss */
 .enquery__form textarea {
   background: none;
   background: 0 0 url(../i/dot-white.png) repeat;
@@ -1586,41 +1595,36 @@ body,
   height: 100%;
 }
 
-/* line 165, ../scss/_992.scss */
-.wrap {
-  position: relative;
-  z-index: 1;
-}
-/* line 170, ../scss/_992.scss */
+/* line 167, ../scss/_992.scss */
 .wrap .section__wrap {
   min-height: 100%;
   padding: 0;
   position: relative;
   z-index: 2;
 }
-/* line 176, ../scss/_992.scss */
+/* line 173, ../scss/_992.scss */
 .wrap .section__wrap .section {
   padding: 0 0 4em;
 }
-/* line 179, ../scss/_992.scss */
+/* line 176, ../scss/_992.scss */
 .wrap .section__wrap .section h1 {
   padding-top: 0;
 }
-/* line 181, ../scss/_992.scss */
+/* line 178, ../scss/_992.scss */
 .wrap .section__wrap .section h1 a {
   padding-top: 1.5em;
   display: block;
 }
 
-/* line 192, ../scss/_992.scss */
+/* line 189, ../scss/_992.scss */
 .header__wrap .section {
   padding: 0;
 }
-/* line 195, ../scss/_992.scss */
+/* line 192, ../scss/_992.scss */
 .header__wrap .section h1 {
   margin: 0;
 }
-/* line 201, ../scss/_992.scss */
+/* line 198, ../scss/_992.scss */
 .header__wrap .header .logo {
   margin: 0 auto;
   position: absolute;
@@ -1629,17 +1633,17 @@ body,
   margin-left: -293.5px;
   margin-top: -47.5px;
 }
-/* line 209, ../scss/_992.scss */
+/* line 206, ../scss/_992.scss */
 .header__wrap .header h1.logo {
   margin-top: -47.5px;
 }
-/* line 213, ../scss/_992.scss */
+/* line 210, ../scss/_992.scss */
 .header__wrap .header .tagline {
   text-indent: -9878px;
   display: none;
 }
 
-/* line 219, ../scss/_992.scss */
+/* line 216, ../scss/_992.scss */
 .nav__wrap {
   z-index: 4;
 }
