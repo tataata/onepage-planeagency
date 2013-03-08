@@ -94,116 +94,40 @@
 
     <div id="about" class="section__wrap about__wrap">
       <section class="section about">
-        <h1><a name="about">Who&nbsp;we&nbsp;are</a></h1>
-        <p><strong>FLY2RUSSIA</strong> is&nbsp;a&nbsp;young independent aviation consultancy company.</p>
-        <p><strong>Our mission</strong> is&nbsp;to&nbsp;open Russian and CIS aviation markets for&nbsp;our Partners.</p>
-        <p>Our small team is&nbsp;a&nbsp;group of&nbsp;experienced aviation professionals. </p>
-        <p>We know Russian and CIS markets, and we&nbsp;know how to&nbsp;promote and implement products of&nbsp;our Partners in&nbsp;the market. </p> 
-        <p>We have a&nbsp;different consultancy model, our solutions are:</p>
-        <ul class="principles">
-          <li>Efficient</li>
-          <li>Simple</li>
-          <li>Result-oriented</li>
-        </ul>
-        <p>That is why we offer smart and flexible price policy.</p>
+
+        {% include about.html %}
+
       </section>
     </div><!-- /section__wrap -->
 
     <div  id="services" class="section__wrap services__wrap">
       <section class="section services">
-        <h1><a name="services">Services</a></h1>
-        <article id="airport" class="airport">
-          <h1 class="title">Airports & Commercial Airlines<span class="icon"></span></h1>
-          <ul class="services__list">
-            <li>research and analysis of&nbsp;Russian and CIS aviation industry</li> 
-            <li>research and analysis of&nbsp;routes from/to Russia and CIS</li>
-            <li>monitoring and reporting on&nbsp;a&nbsp;regular basis of&nbsp;Russian and CIS&nbsp;aviation markets</li> 
-            <li>organization and support of&nbsp;personal meetings with targeted airlines and&nbsp;co-partners (key decision makers, governmental representatives,&nbsp;etc)</li> 
-            <li>recommendations on&nbsp;participation in&nbsp;the industry events/conferences in&nbsp;Russia and CIS</li> 
-          </ul>
-        </article>
-
-        <article id="businessair" class="business-services">
-          <h1 class="title">Business Aviation Services<span class="icon"></span></h1>
-          <ul  class="services__list">
-            <li>analysis of Russian and&nbsp;CIS general aviation industry</li> 
-            <li>organization of the business meetings with key/main Russian&nbsp;and&nbsp;CIS brokers</li> 
-          </ul>
-        </article>
+        
+        {% include services.html %}
 
       </section>
     </div><!-- /section__wrap -->
 
     <div id="enquiries" class="section__wrap enquiries__wrap">
       <section class="section enquiries clearfix">
-        <h1><a name="enquiries">Enquiries</a></h1>
 
         <!-- Local version -->
         <!--
         <form class="enquiry__form" method="POST" action="https://secure.mailjol.net/allforms/u/b1a297ac.php">
         -->
-        <form class="enquiry__form" method="POST" action="https://secure.mailjol.net/allforms/u/fc24218e.php">
-          <fieldset name="enquiry-request"  class="enquiry-request">
-            <div class="field your-message">
-              <label for="message">Your message</label>
-              <textarea class="input" placeholder="" type="text" name="message" id="message" required></textarea>
-            </div>
-          </fieldset>
+        
+        {% include enquiries.html %}
 
-          <fieldset name="enquiry-contact"  class="enquiry-contact personal-info">
-            <!-- <legend>Contact information</legend> -->
-            <div class="field name">
-              <label for="name">Your name</label>
-              <input class="input" placeholder="" type="text" name="name" id="message" required>
-            </div>
-            <div class="field email">
-              <label for="email">Your e-mail</label>
-              <input class="input" placeholder="" type="email" name="email" id="email" required>
-            </div>
-            <div class="field phone optional">
-              <label for="phone">Phone</label> 
-              <input class="input" placeholder="" type="text" name="phone" id="phone">
-            </div>
-          </fieldset> 
-            
-          <fieldset name="enquiry-contact"  class="enquiry-contact company-info">
-            <div class="field company-name optional">
-              <label for="company-name">Company name</label>
-              <input class="input" placeholder="" type="text" name="company-name" id="company-name">
-            </div>
-            <div class="field company-website optional">
-              <label for="company-website">Company website</label>
-              <input class="input" placeholder="" type="text" name="company-website" id="company-website">
-            </div>
-            <div class="field company-address optional">
-              <label for="company-address">Company address</label>
-              <input class="input" placeholder="" type="text" name="company-address" id="company-address">
-            </div>
-          </fieldset> 
-          <button type="submit">Send</button>
-        </form>
       </section>
     </div><!-- /section__wrap -->
 
     <div  id="contacts" class="section__wrap contacts__wrap">
       <section class="section contacts">
-        <h1><a name="contacts">Contacts</a></h1>
-        <ul class="contacts-list">
-          <li class="contacts-list__item email"><p class="text"><a href="mailto:sales@fly2russia.com">sales@fly2russia.com</a></p></li>
-          <li class="contacts-list__item phone"><p class="text"><a href="tel:+79629680448">+7&nbsp;&nbsp;962&nbsp;&nbsp;968&nbsp;04&nbsp;48</a></p></li>
-        </ul>
+        
+        {% include contacts.html %}
 
         <footer class="footer">
-          <nav class="nav">
-            <ul>
-              <li><a href="#about">Who we are</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#enquiries">enquiries</a></li>
-              <li><a href="#contacts">Contacts</a></li>
-            </ul>
-          </nav>
-          <p class="copyright">Fly2Russia &copy; 2013, All rights reserved</p>
-          <p class="copyright">Carefully built by <a href="http://taniaabanina.com" title="web designer Tania Abanina">Tania Abanina</a></p>
+          {% include footer.html %}
         </footer>
 
       </section>
