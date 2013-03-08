@@ -14,3 +14,4 @@ Thumbs.db
 
 # Can also ignore all directories and files in a directory.
 *.sass-cache*
+*_site*
