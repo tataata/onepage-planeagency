@@ -1,0 +1,42 @@
+      <h1><a name="enquiries">Enquiries</a></h1>
+
+        <form class="enquiry__form" method="POST" action="https://secure.mailjol.net/allforms/u/fc24218e.php">
+          <fieldset name="enquiry-request"  class="enquiry-request">
+            <div class="field your-message">
+              <label for="message">Your message</label>
+              <textarea class="input" placeholder="" type="text" name="message" id="message" required></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset name="enquiry-contact"  class="enquiry-contact personal-info">
+            <!-- <legend>Contact information</legend> -->
+            <div class="field name">
+              <label for="name">Your name</label>
+              <input class="input" placeholder="" type="text" name="name" id="message" required>
+            </div>
+            <div class="field email">
+              <label for="email">Your e-mail</label>
+              <input class="input" placeholder="" type="email" name="email" id="email" required>
+            </div>
+            <div class="field phone optional">
+              <label for="phone">Phone</label> 
+              <input class="input" placeholder="" type="text" name="phone" id="phone">
+            </div>
+          </fieldset> 
+            
+          <fieldset name="enquiry-contact"  class="enquiry-contact company-info">
+            <div class="field company-name optional">
+              <label for="company-name">Company name</label>
+              <input class="input" placeholder="" type="text" name="company-name" id="company-name">
+            </div>
+            <div class="field company-website optional">
+              <label for="company-website">Company website</label>
+              <input class="input" placeholder="" type="text" name="company-website" id="company-website">
+            </div>
+            <div class="field company-address optional">
+              <label for="company-address">Company address</label>
+              <input class="input" placeholder="" type="text" name="company-address" id="company-address">
+            </div>
+          </fieldset> 
+          <button type="submit">Send</button>
+        </form>

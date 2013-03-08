@@ -341,12 +341,12 @@ address {
 }
 
 /* line 28, ../scss/_colours.scss */
-.enqueries__wrap {
+.enquiries__wrap {
   background: 0 0 url("../i/dot-dark-blue.png") repeat;
   text-shadow: #01568b 1px 1px;
 }
 /* line 31, ../scss/_colours.scss */
-.enqueries__wrap h1 {
+.enquiries__wrap h1 {
   text-shadow: #003759 2px 2px;
 }
 
@@ -499,25 +499,25 @@ fieldset {
 }
 
 /* line 49, ../scss/_forms.scss */
-.enquery__form textarea,
-.enquery__form label,
-.enquery__form input {
+.enquiry__form textarea,
+.enquiry__form label,
+.enquiry__form input {
   padding: 0.375em 0;
   color: white;
   font-weight: normal;
   letter-spacing: .1ex;
 }
 /* line 55, ../scss/_forms.scss */
-.enquery__form fieldset {
+.enquiry__form fieldset {
   margin-bottom: 1.5em;
 }
 /* line 59, ../scss/_forms.scss */
-.enquery__form .field {
+.enquiry__form .field {
   margin-bottom: 1.5em;
   position: relative;
 }
 /* line 65, ../scss/_forms.scss */
-.enquery__form label {
+.enquiry__form label {
   color: white;
   color: rgba(225, 225, 225, 0.9);
   position: relative;
@@ -526,7 +526,7 @@ fieldset {
   top: 0;
 }
 /* line 74, ../scss/_forms.scss */
-.enquery__form label:after {
+.enquiry__form label:after {
   position: absolute;
   display: block;
   content: " ";
@@ -538,12 +538,12 @@ fieldset {
   opacity: .85;
 }
 /* line 88, ../scss/_forms.scss */
-.enquery__form .your-message label {
+.enquiry__form .your-message label {
   padding-left: .25em;
 }
 /* line 94, ../scss/_forms.scss */
-.enquery__form textarea,
-.enquery__form input {
+.enquiry__form textarea,
+.enquiry__form input {
   background: transparent;
   border: none;
   border-bottom: 4px solid white;
@@ -552,57 +552,57 @@ fieldset {
   position: relative;
 }
 /* line 102, ../scss/_forms.scss */
-.enquery__form textarea:invalid,
-.enquery__form input:invalid {
+.enquiry__form textarea:invalid,
+.enquiry__form input:invalid {
   border-bottom: 4px solid white;
 }
 /* line 106, ../scss/_forms.scss */
-.enquery__form textarea:valid,
-.enquery__form input:valid {
+.enquiry__form textarea:valid,
+.enquiry__form input:valid {
   background-color: transparent;
   border-bottom: 4px solid white;
   border-bottom: 4px solid rgba(255, 255, 255, 0.8);
 }
 /* line 112, ../scss/_forms.scss */
-.enquery__form textarea:required,
-.enquery__form input:required {
+.enquiry__form textarea:required,
+.enquiry__form input:required {
   border-bottom: 4px solid white;
   border-bottom: 4px solid rgba(255, 255, 255, 0.8);
   background: transparent;
 }
 /* line 120, ../scss/_forms.scss */
-.enquery__form textarea {
+.enquiry__form textarea {
   background: white;
   background: rgba(255, 255, 255, 0.08);
   height: 5em;
 }
 /* line 124, ../scss/_forms.scss */
-.enquery__form textarea:invalid {
+.enquiry__form textarea:invalid {
   border-bottom: 4px solid white;
   background: white;
   background: rgba(255, 255, 255, 0.2);
 }
 /* line 128, ../scss/_forms.scss */
-.enquery__form textarea:required {
+.enquiry__form textarea:required {
   background: white;
   background: rgba(255, 255, 255, 0.08);
 }
 /* line 134, ../scss/_forms.scss */
-.enquery__form .optional label {
+.enquiry__form .optional label {
   opacity: .5;
 }
 /* line 137, ../scss/_forms.scss */
-.enquery__form .optional label:after {
+.enquiry__form .optional label:after {
   display: none;
 }
 /* line 142, ../scss/_forms.scss */
-.enquery__form .optional textarea,
-.enquery__form .optional input {
+.enquiry__form .optional textarea,
+.enquiry__form .optional input {
   border-bottom: 4px solid white;
   border-bottom: 4px solid rgba(255, 255, 255, 0.5);
 }
 /* line 151, ../scss/_forms.scss */
-.enquery__form button {
+.enquiry__form button {
   background: #0172b9;
   color: #e2eef7;
   padding: 0.5em 0;
@@ -615,13 +615,13 @@ fieldset {
   text-shadow: #01568b 1px 1px 0;
 }
 /* line 162, ../scss/_forms.scss */
-.enquery__form button:hover {
+.enquiry__form button:hover {
   color: #cae0f0;
   background: #016caf;
   text-shadow: #014977 1px 1px 0;
 }
 /* line 169, ../scss/_forms.scss */
-.enquery__form button:active {
+.enquiry__form button:active {
   color: #c2dbee;
   text-shadow: black 1px 1px 0;
   background: #0162a0;
@@ -826,15 +826,15 @@ fieldset {
 }
 
 /* line 215, ../scss/_layout.scss */
-.enqueries {
+.enquiries {
   overflow: visible;
 }
 /* line 218, ../scss/_layout.scss */
-.enqueries .enquery__form {
+.enquiries .enquiry__form {
   width: 100%;
 }
 /* line 222, ../scss/_layout.scss */
-.enqueries .enquery__form .field {
+.enquiries .enquiry__form .field {
   margin: 0 0 1em;
 }
 
@@ -1401,21 +1401,21 @@ address {
 }
 
 /* line 79, ../scss/_600.scss */
-.enqueries .enquery__form {
+.enquiries .enquiry__form {
   float: left;
 }
 /* line 82, ../scss/_600.scss */
-.enqueries .enquery__form .personal-info {
+.enquiries .enquiry__form .personal-info {
   float: left;
   width: 44%;
 }
 /* line 86, ../scss/_600.scss */
-.enqueries .enquery__form .company-info {
+.enquiries .enquiry__form .company-info {
   float: right;
   width: 44%;
 }
 /* line 90, ../scss/_600.scss */
-.enqueries .enquery__form button {
+.enquiries .enquiry__form button {
   float: right;
   width: 44%;
 }
@@ -1491,19 +1491,19 @@ address {
 }
 
 /* line 70, ../scss/_992.scss */
-.enquery__form label {
+.enquiry__form label {
   position: absolute;
 }
 /* line 74, ../scss/_992.scss */
-.enquery__form label:after {
+.enquiry__form label:after {
   left: -1.25em;
 }
 /* line 78, ../scss/_992.scss */
-.enquery__form label.show {
+.enquiry__form label.show {
   display: block;
 }
 /* line 81, ../scss/_992.scss */
-.enquery__form label.hide {
+.enquiry__form label.hide {
   display: none;
 }
 
@@ -1648,7 +1648,7 @@ body,
 }
 
 /* line 78, ../scss/ipad.scss */
-.enqueries__wrap {
+.enquiries__wrap {
   background: none;
 }
 
