@@ -1,0 +1,144 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Fly2Russia • Aviation consulting Russia & CIS</title>
+
+  <meta name="description" content="Fly2Russia is aviation consulting company, based in Moscow, Russia. Company provides services to airlines, airports and business aviation operators.">
+  <meta name="keywords" content="fly2russia, fly to russia,  fly 2 russia, aviation consulting, aviation consulting russia,  aviation consulting CIS, airlines airports, research routes, analysis routes, business aviation brokers">
+  <meta name="author" content="Fly2Russia">
+  <meta name="copyright" content="Fly2Russia"> 
+
+  <!-- Enable html5 markup for IE -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv/dist/html5shiv.js"></script>
+  <![endif]-->
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" >
+  <!-- <link rel="stylesheet" media="all and (min-device-width : 768px)  and (max-device-width: 1024px)" href="css/ipad.css" type="text/css" /> -->
+  <!--[if (gt IE 8) | (IEMobile)]><!-->
+  <link rel="stylesheet" href="/css/style.css" type="text/css" >
+  <!--<![endif]-->
+
+  <!--[if (lt IE 9) & (!IEMobile)]>
+  <link rel="stylesheet" href="/css/ie.css">
+  <![endif]-->
+
+  <link rel="shortcut icon"  href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon-iphone.png"> 
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-ipad.png"> 
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-iphone4.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-ipad3.png">
+
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38875272-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+
+  <div class="wrap"  role="main">
+    <!-- Feedback message ufter sending message -->
+    <div class="message-feedback" id="thank-you"></div>
+    <script>
+      (function() {
+        var isThankYou = location.search.indexOf('email=thankyou') !== -1,
+            thankYou;
+        if (isThankYou) {
+          thankYou = document.getElementById("thank-you");
+          thankYou.innerHTML = "<p>Your message was sent successfully. Thank you!</p>";
+          thankYou.style.display = "block";
+          thankYou.onclick = function () {
+            thankYou.style.display = "none";
+          };
+        }
+      }());
+    </script>
+
+    <div class="section__wrap header__wrap">
+      <header class="section header" role="banner">
+        <div class="logo" >
+          <img src="i/logo-fly2russia.png" alt="Fly2Russia / Aviation consulting Russia and CIS">
+        </div>
+      </header>
+    </div><!-- /section__wrap -->
+
+    <div class="nav__wrap">
+      <nav class="nav">
+        <ul>
+          <li><a href="#about"><span>Who we are</span></a></li>
+          <li><a href="#services"><span>Services</span></a></li>
+          <li><a href="#enquiries"><span>enquiries</span></a></li>
+          <li><a href="#contacts"><span>Contacts</span></a></li>
+        </ul>
+      </nav>
+    </div><!-- /nav__wrap -->
+
+    <div id="about" class="section__wrap about__wrap">
+      <section class="section about">
+
+        {% include content/about.html %}
+
+      </section>
+    </div><!-- /section__wrap -->
+
+    <div  id="services" class="section__wrap services__wrap">
+      <section class="section services">
+        
+        {% include services.html %}
+
+      </section>
+    </div><!-- /section__wrap -->
+
+    <div id="enquiries" class="section__wrap enquiries__wrap">
+      <section class="section enquiries clearfix">
+
+        <!-- Local version -->
+        <!--
+        <form class="enquiry__form" method="POST" action="https://secure.mailjol.net/allforms/u/b1a297ac.php">
+        -->
+        
+        {% include inquiries.html %}
+
+      </section>
+    </div><!-- /section__wrap -->
+
+    <div  id="contacts" class="section__wrap contacts__wrap">
+      <section class="section contacts">
+        
+        {% include contacts.html %}
+
+        <footer class="footer">
+          {% include footer.html %}
+        </footer>
+
+      </section>
+    </div><!-- /section__wrap -->
+
+    
+  </div><!-- /wrap -->
+  <div class="bg"><img src=/i/bg.jpg></div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
