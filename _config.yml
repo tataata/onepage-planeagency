@@ -1,3 +1,4 @@
+
 source:      .
 destination: ./_site
 plugins:     ./_plugins
@@ -16,3 +17,10 @@ lsi:         false
 pygments:    false
 markdown:    maruku
 permalink:   pretty  
+
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex

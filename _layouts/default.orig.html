@@ -33,17 +33,7 @@
       <section class="section about">
 
         
-        {% include _content/about.html %}
-        
-
-      </section>
-    </div><!-- /section__wrap -->
-
-    <div id="about" class="section__wrap about__wrap">
-      <section class="section about">
-
-        
-        {% include _content/about.md %}
+         {{ content }}
         
 
       </section>
@@ -52,7 +42,7 @@
     <div  id="services" class="section__wrap services__wrap">
       <section class="section services">
         
-        {% include _content/services.html %}
+        {% include services.html %}
 
       </section>
     </div><!-- /section__wrap -->
@@ -73,10 +63,10 @@
     <div  id="contacts" class="section__wrap contacts__wrap">
       <section class="section contacts">
         
-        {% include _content/contacts.html %}
+        {% include contacts.html %}
 
         <footer class="footer">
-          {% include _content/footer.html %}
+          {% include content/footer.md %}
         </footer>
 
       </section>
