@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 35, ../scss/_typography.scss */
-.enquery__form button {
+.enquiry__form button {
   font-family: "museo_sans_cyrl_500regular", Helvetica, Arial, sans-serif;
 }
 
@@ -283,8 +283,8 @@ address {
 }
 
 /* line 128, ../scss/_typography.scss */
-.enquery__form input,
-.enquery__form textarea {
+.enquiry__form input,
+.enquiry__form textarea {
   font-family: "pluto-sans-cond-light", Helvetica, Arial, sans-serif;
 }
 
