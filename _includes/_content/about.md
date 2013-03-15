@@ -3,7 +3,7 @@ layout: default
 title: about
 ---
 
-#Who&nbsp;we&nbsp;are
+#Who&nbsp;we&nbsp;are About us!
 
 **FLY2RUSSIA** is&nbsp;a&nbsp;young independent aviation consultancy company.
 
